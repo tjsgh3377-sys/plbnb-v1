@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLBNB — 유산균 개발 · 프로바이오틱스 전문</title>
+  <meta name="description" content="(주)피엘비앤비는 30년 이상의 유산균 개발 노하우와 3,000여 균주 보유로 프로바이오틱스·포스트바이오틱스 제품 개발 및 산업화를 선도하는 전문 기업입니다.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* ===== 스크롤 reveal 애니메이션 ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideUpBounce {
+      0% {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(-8px);
+      }
+      80% {
+        transform: translateY(4px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.6;
+      }
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 85, 204, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 40px rgba(0, 85, 204, 0.6);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -1000px 0;
+      }
+      100% {
+        background-position: 1000px 0;
+      }
+    }
+
+    /* ===== 추가 다양한 애니메이션 ===== */
+
+    @keyframes expandWidth {
+      from {
+        width: 0;
+        opacity: 0;
+      }
+      to {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      75% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes wave {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      25% {
+        transform: translateY(-5px);
+      }
+      50% {
+        transform: translateY(0px);
+      }
+      75% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes blurIn {
+      from {
+        opacity: 0;
+        filter: blur(10px);
+      }
+      to {
+        opacity: 1;
+        filter: blur(0px);
+      }
+    }
+
+    @keyframes zoomInSmooth {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideLeftBounce {
+      0% {
+        opacity: 0;
+        transform: translateX(-60px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateX(10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideRightBounce {
+      0% {
+        opacity: 0;
+        transform: translateX(60px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateX(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes jiggle {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-3px);
+      }
+      75% {
+        transform: translateX(3px);
+      }
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.15);
+      }
+      50% {
+        transform: scale(1);
+      }
+      75% {
+        transform: scale(1.15);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* ===== 요소별 애니메이션 클래스 ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .reveal.in-view {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .reveal.in-view.left {
+      animation: fadeInLeft 0.8s ease-out forwards;
+    }
+
+    .reveal.in-view.right {
+      animation: fadeInRight 0.8s ease-out forwards;
+    }
+
+    /* 스태거 애니메이션 */
+    .reveal.stagger-1.in-view { animation-delay: 0.1s; }
+    .reveal.stagger-2.in-view { animation-delay: 0.2s; }
+    .reveal.stagger-3.in-view { animation-delay: 0.3s; }
+    .reveal.stagger-4.in-view { animation-delay: 0.4s; }
+    .reveal.stagger-5.in-view { animation-delay: 0.5s; }
+
+    /* 카드 호버 효과 */
+    .hc {
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transform: translateY(0);
+    }
+
+    .hc:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 섹션 카드 호버 */
+    .matList > a {
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transform: translateY(0) scale(1);
+    }
+
+    .matList > a:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+
+    /* 로딩 애니메이션 */
+    .loading {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+      );
+      background-size: 1000px 100%;
+      animation: shimmer 2s infinite;
+    }
+
+    /* 파라렉스 텍스트 */
+    .parallax-text {
+      transition: transform 0.5s ease-out;
+    }
+
+    /* 숫자 카운터 */
+    .counter-value {
+      font-weight: 800;
+      color: var(--point-text);
+    }
+
+    /* ===== 애니메이션 유틸리티 클래스 ===== */
+    /* 진입 방향 애니메이션 */
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+    .animate-fade-in-down { animation: slideInDown 0.8s ease-out forwards; }
+    .animate-fade-in-left { animation: slideInLeft 0.8s ease-out forwards; }
+    .animate-fade-in-right { animation: slideInRight 0.8s ease-out forwards; }
+
+    /* 스케일 애니메이션 */
+    .animate-scale-in { animation: scaleIn 0.6s ease-out forwards; }
+    .animate-zoom-in { animation: zoomInSmooth 0.8s ease-out forwards; }
+
+    /* 바운스 애니메이션 */
+    .animate-bounce { animation: bounce 1.5s ease-in-out infinite; }
+    .animate-heartbeat { animation: heartbeat 1.3s ease-in-out infinite; }
+
+    /* 움직임 애니메이션 */
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-wave { animation: wave 2s ease-in-out infinite; }
+    .animate-jiggle { animation: jiggle 0.8s ease-in-out forwards; }
+
+    /* 슬라이드 애니메이션 */
+    .animate-slide-left-bounce { animation: slideLeftBounce 0.8s ease-out forwards; }
+    .animate-slide-right-bounce { animation: slideRightBounce 0.8s ease-out forwards; }
+
+    /* 특수 애니메이션 */
+    .animate-blur-in { animation: blurIn 0.8s ease-out forwards; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+    .animate-glow { animation: glow 2s ease-in-out infinite; }
+    .animate-shimmer { animation: shimmer 2s infinite; background-size: 1000px 100%; }
+
+    /* 히어로 아이콘 애니메이션 */
+    .eyebrow {
+      animation: slideUpBounce 0.8s ease-out 0.2s both;
+    }
+
+    .heroSingle h2 {
+      animation: slideUpBounce 0.8s ease-out 0.4s both;
+    }
+
+    .heroSingle > .inner > p.sub {
+      animation: slideUpBounce 0.8s ease-out 0.6s both;
+    }
+
+    .hc {
+      animation: slideUpBounce 0.8s ease-out both;
+    }
+
+    .hc.hc--mfg {
+      animation-delay: 0.8s;
+    }
+
+    .hc.hc--consult {
+      animation-delay: 1s;
+    }
+
+    /* 섹션 타이틀 애니메이션 */
+    .secHead h2,
+    .secHead .bluetext {
+      animation: slideUpBounce 0.8s ease-out forwards;
+    }
+
+    .secHead .bluetext {
+      animation-delay: 0.1s;
+    }
+
+    .secHead h2 {
+      animation-delay: 0.2s;
+    }
+
+    /* 서비스 리스트 아이템 */
+    .service-item {
+      animation: slideUpBounce 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    .service-item:nth-child(1) { animation-delay: 0.1s; }
+    .service-item:nth-child(2) { animation-delay: 0.2s; }
+    .service-item:nth-child(3) { animation-delay: 0.3s; }
+
+    /* 통계 박스 */
+    .statBox {
+      animation: slideUpBounce 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    .statBox:nth-child(1) { animation-delay: 0.1s; }
+    .statBox:nth-child(2) { animation-delay: 0.2s; }
+    .statBox:nth-child(3) { animation-delay: 0.3s; }
+
+    /* 마키 효과 */
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* 부드러운 섹션 전환 */
+    section {
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0s; }
+    section:nth-of-type(2) { animation-delay: 0.2s; }
+    section:nth-of-type(3) { animation-delay: 0.4s; }
+    section:nth-of-type(4) { animation-delay: 0.6s; }
+    section:nth-of-type(5) { animation-delay: 0.8s; }
+
+    /* 버튼 호버 효과 */
+    .add-button,
+    .topBtn {
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .add-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 85, 204, 0.25);
+    }
+
+    .topBtn:hover {
+      transform: translateY(-4px) scale(1.1);
+    }
+
+    /* 배너 텍스트 애니메이션 */
+    .bannerContent h2,
+    .bannerContent p {
+      animation: slideUpBounce 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    .bannerContent h2 {
+      animation-delay: 0.2s;
+    }
+
+    .bannerContent p {
+      animation-delay: 0.4s;
+    }
+
+    /* ===== 대제목 스타일 ===== */
+    .txt2 {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.3;
+    }
+
+    /* ===== 텍스트 애니메이션 ===== */
+    .text-letter-animation span {
+      display: inline-block;
+      animation: slideUpBounce 0.6s ease-out both;
+    }
+
+    .text-letter-animation span:nth-child(1) { animation-delay: 0s; }
+    .text-letter-animation span:nth-child(2) { animation-delay: 0.05s; }
+    .text-letter-animation span:nth-child(3) { animation-delay: 0.1s; }
+    .text-letter-animation span:nth-child(4) { animation-delay: 0.15s; }
+    .text-letter-animation span:nth-child(5) { animation-delay: 0.2s; }
+    .text-letter-animation span:nth-child(n+6) { animation-delay: calc(0.2s + (var(--index) - 5) * 0.05s); }
+
+    /* ===== 추가 호버 효과 및 인터랙션 ===== */
+    /* 버튼 효과 개선 */
+    .add-button::before,
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      transition: left 0.5s ease;
+      z-index: -1;
+    }
+
+    .add-button:hover::before,
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    /* 텍스트 호버 언더라인 애니메이션 */
+    a {
+      position: relative;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--point-text);
+      transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+
+    /* 카드 보더 애니메이션 */
+    .hc {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hc::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 12px;
+      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+      transform: translateX(-100%);
+      transition: transform 0.6s;
+      pointer-events: none;
+    }
+
+    .hc:hover::before {
+      transform: translateX(100%);
+    }
+
+    /* 아이콘 회전 효과 */
+    .hc img,
+    .matList a img {
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .hc:hover img,
+    .matList a:hover img {
+      transform: rotate(5deg) scale(1.1);
+    }
+
+    /* 섹션 백그라운드 그라디언트 애니메이션 */
+    .sec {
+      position: relative;
+    }
+
+    /* 글래스모프즘 효과 */
+    .contact-link {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .contact-link:hover {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 32px rgba(0, 85, 204, 0.15);
+      transform: translateY(-2px);
+    }
+
+    /* 통계 박스 호버 */
+    [class*="statBox"],
+    [class*="stat"] {
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    [class*="statBox"]:hover,
+    [class*="stat"]:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 50px rgba(0, 85, 204, 0.1);
+    }
+
+    /* ===== 마우스 트래킹 효과 ===== */
+    .sec, section {
+      position: relative;
+    }
+
+    .sec::before, section::before {
+      content: '';
+      position: absolute;
+      top: var(--mouse-y, 0);
+      left: var(--mouse-x, 0);
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, rgba(0, 85, 204, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .sec:hover::before, section:hover::before {
+      opacity: 1;
+    }
+
+    /* 텍스트 분할 애니메이션 */
+    .text-split {
+      letter-spacing: 0.05em;
+    }
+
+    .text-split span {
+      display: inline-block;
+      will-change: transform, opacity;
+    }
+
+    /* 광선 효과 */
+    @keyframes lightRay {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.8);
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(20px) scale(1.2);
+      }
+    }
+
+    .light-ray {
+      animation: lightRay 2s ease-out infinite;
+      position: absolute;
+      width: 2px;
+      background: linear-gradient(180deg, transparent, var(--point-text), transparent);
+    }
+
+    .bannerContent .btn {
+      animation: slideUpBounce 0.8s ease-out 0.6s both;
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+
+<!-- ================= 헤더 ================= -->
+<div id="header">
+  <div class="inner">
+    <a class="logo" href="index.html" aria-label="PLBNB 홈">
+      <img src="images/logo.png" alt="PLBNB — 완벽한 라이프">
+    </a>
+    <nav id="gnb" aria-label="주 메뉴">
+      <ul>
+        <li>
+          <a href="company/about.html">회사소개</a>
+          <div class="dep2Menu">
+            <a href="company/about.html">회사 개요</a>
+            <a href="company/history.html">연혁</a>
+            <a href="company/location.html">오시는길</a>
+          </div>
+        </li>
+        <li>
+          <a href="business/development.html">개발현황</a>
+          <div class="dep2Menu">
+            <a href="business/development.html#patents">특허 현황</a>
+            <a href="business/development.html#products">개발 제품</a>
+            <a href="business/development.html#strains">균주 정보</a>
+          </div>
+        </li>
+        <li>
+          <a href="business/business.html">사업소개</a>
+          <div class="dep2Menu">
+            <a href="business/business.html#service1">주요 서비스</a>
+            <a href="business/business.html#service2">산업 분야</a>
+          </div>
+        </li>
+        <li>
+          <a href="support/partners.html">협력사</a>
+          <div class="dep2Menu">
+            <a href="support/partners.html">협력사 소개</a>
+          </div>
+        </li>
+        <li>
+          <a href="support/contact.html">고객지원</a>
+          <div class="dep2Menu">
+            <a href="support/contact.html">온라인 문의</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="subMenu">
+      <a class="contact-link" href="support/contact.html">온라인 문의</a>
+      <button class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 전체메뉴 오버레이 -->
+<div class="allMenuWrap" aria-hidden="true">
+  <button class="closeBtn" aria-label="전체 메뉴 닫기"></button>
+  <div class="allMenu">
+    <div>
+      <p class="dep1">회사소개</p>
+      <div class="dep2">
+        <a href="company/about.html">회사 개요</a><a href="company/history.html">연혁</a><a href="company/location.html">오시는길</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">개발현황</p>
+      <div class="dep2">
+        <a href="business/development.html#patents">특허 현황</a><a href="business/development.html#products">개발 제품</a><a href="business/development.html#strains">균주 정보</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">사업소개</p>
+      <div class="dep2">
+        <a href="business/business.html#service1">주요 서비스</a><a href="business/business.html#service2">산업 분야</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">협력사</p>
+      <div class="dep2">
+        <a href="support/partners.html">협력사 소개</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">고객지원</p>
+      <div class="dep2">
+        <a href="support/contact.html">온라인 문의</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= 히어로 ================= -->
+<section class="heroSingle" aria-label="PLBNB 소개">
+  <video class="bg" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;">
+    <source src="td06100000904_1080p.mp4" type="video/mp4">
+    <source src="images/hero/main.jpg" type="image/jpeg">
+  </video>
+  <span class="bg bg--consult" style="background-image:url('images/hero/development.jpg')" aria-hidden="true"></span>
+  <div class="inner" style="position: relative; z-index: 2;">
+    <p class="eyebrow">유산균 개발 · 프로바이오틱스 전문</p>
+    <h2>30년 기술력으로,<br>세계 건강을 선도합니다.</h2>
+    <p class="sub">PLBNB는 국내 유산균 개발 선도 기업으로,<br>3,000여 균주와 20여 특허를 보유하여 산업화를 선도합니다.</p>
+    <div class="heroCards">
+      <a class="hc hc--mfg" href="business/business.html">
+        <span class="label">사업소개</span>
+        <strong>건강기능식품 · 유제품</strong>
+        <span class="go">자세히 보기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="hc hc--consult" href="business/development.html">
+        <span class="label">개발현황</span>
+        <strong>기술 · 특허 · 균주</strong>
+        <span class="go">자세히 보기 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 사업소개 ================= -->
+<section class="section section--soft mfgSec" id="business">
+  <div class="container">
+    <div class="secHead">
+      <div>
+        <p class="bluetext">사업소개</p>
+        <h2 class="txt2">KFDA 기준의 엄격한 품질 관리</h2>
+      </div>
+      <a href="business/business.html" class="add-button">사업소개 보기</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="matWrap">
+    <button class="matArrow prev" type="button" aria-label="이전 협력사 보기">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+    </button>
+    <button class="matArrow next" type="button" aria-label="다음 협력사 보기">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+    <div class="matMarquee" aria-label="주요 협력사">
+      <div class="swiper-wrapper">
+        <div class="matCard">
+          <p class="en">Namyang Dairy</p>
+          <h3>남양유업</h3>
+          <p>위력 & 위쎈 - PLBNB 개발 균주 적용으로 대표 제품의 프로바이오틱 효능을 강화합니다.</p>
+          <div class="img"><img src="images/partners/namyang.svg" alt="남양유업" loading="lazy"></div>
+        </div>
+        <div class="matCard">
+          <p class="en">Bulgaris</p>
+          <h3>불가리스</h3>
+          <p>불가리스 & 불가리스 핏 - 프로바이오틱스 함유로 소비자들에게 신뢰받는 요구르트 제품입니다.</p>
+          <div class="img"><img src="images/partners/bulgaris.svg" alt="불가리스" loading="lazy"></div>
+        </div>
+        <div class="matCard">
+          <p class="en">CJ Health & Wellness</p>
+          <h3>종근당건강</h3>
+          <p>락토핏 - 락토바실러스 균주 함유로 소화 및 장건강을 돕는 건강기능식품입니다.</p>
+          <div class="img"><img src="images/partners/cj.svg" alt="종근당건강" loading="lazy"></div>
+        </div>
+        <div class="matCard">
+          <p class="en">Various Partners</p>
+          <h3>기타 업체</h3>
+          <p>다양한 건강기능식품, 유제품, 음료 제조사와 협력하여 프로바이오틱스 솔루션을 제공합니다.</p>
+          <div class="img"><img src="images/partners/others.svg" alt="협력사" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 개발현황 ================= -->
+<section class="section" id="development">
+  <div class="container">
+    <div class="secHead consult">
+      <div>
+        <p class="bluetext">개발현황</p>
+        <h2 class="txt2">기술력의 증명 - 특허와 균주</h2>
+      </div>
+    </div>
+    <div class="consultGrid">
+      <a class="consultCard" href="business/development.html#patents">
+        <div class="thumb"><img src="images/development/patents.svg" alt="특허" loading="lazy"></div>
+        <div class="body">
+          <p class="no">DEVELOPMENT 01</p>
+          <h3>특허 현황</h3>
+          <ul class="items">
+            <li>프로바이오틱스 특허 10+</li>
+            <li>포스트바이오틱스 특허 10+</li>
+            <li>배양 기술 특허</li>
+            <li>균주 보존 기술</li>
+            <li>기술이전 사업화</li>
+          </ul>
+          <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="consultCard" href="business/development.html#products">
+        <div class="thumb"><img src="images/development/products.svg" alt="개발 제품" loading="lazy"></div>
+        <div class="body">
+          <p class="no">DEVELOPMENT 02</p>
+          <h3>개발 제품</h3>
+          <ul class="items">
+            <li>L. brevis PL9014</li>
+            <li>Lc. lactis PL186</li>
+            <li>B. longum PL1403</li>
+            <li>B. longum BI9988</li>
+            <li>12+ 추가 균주</li>
+          </ul>
+          <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="consultCard" href="business/development.html#strains">
+        <div class="thumb"><img src="images/development/strains.svg" alt="균주" loading="lazy"></div>
+        <div class="body">
+          <p class="no">DEVELOPMENT 03</p>
+          <h3>균주 보유</h3>
+          <ul class="items">
+            <li>3,000+ 우수 균주</li>
+            <li>GRAS 19종</li>
+            <li>한국 토종 균주</li>
+            <li>다양한 기능성</li>
+            <li>지속적 개발</li>
+          </ul>
+          <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="consultCard" href="business/development.html">
+        <div class="thumb"><img src="images/development/technology.jpg" alt="기술" loading="lazy"></div>
+        <div class="body">
+          <p class="no">DEVELOPMENT 04</p>
+          <h3>기술 현황</h3>
+          <ul class="items">
+            <li>BSL2 수준 실험실</li>
+            <li>최적화 배양 시스템</li>
+            <li>기능성 Screening</li>
+            <li>30년 기술력</li>
+            <li>국내 최고 수준</li>
+          </ul>
+          <span class="more">자세히 보기 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 왜 PLBNB인가 ================= -->
+<section class="section section--tint" id="why">
+  <div class="container">
+    <div class="whyGrid">
+      <ul class="whyImgs" aria-hidden="true">
+        <li><img src="images/why/research.jpg" alt="" loading="lazy"></li>
+      </ul>
+      <div>
+        <p class="bluetext">왜 PLBNB인가</p>
+        <h2 class="txt2">30년 기술력으로,<br>건강을 선도합니다.</h2>
+        <p class="txt3" style="margin-top:16px">PLBNB는 단순한 균주 공급 기업이 아닙니다. 30년 이상의 연구 경험과 3,000여 우수 균주를 보유하여, 산업화 수준의 고품질 유산균을 개발합니다.</p>
+        <ul class="whyList">
+          <li><div class="whyRow"><span class="no">01</span>30년 기술 축적</div></li>
+          <li><div class="whyRow"><span class="no">02</span>3,000+ 균주 보유</div></li>
+          <li><div class="whyRow"><span class="no">03</span>20+ 특허 보유</div></li>
+          <li><div class="whyRow"><span class="no">04</span>대기업 협력 실적</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 산업 분야 ================= -->
+<section class="section" id="industries">
+  <div class="container">
+    <div class="secHead">
+      <div>
+        <p class="bluetext">산업 분야</p>
+        <h2 class="txt2">다양한 산업에 서비스를 제공합니다.</h2>
+      </div>
+    </div>
+    <div class="indGrid">
+      <div class="indCard">
+        <div class="thumb"><img src="images/industries/healthcare.svg" alt="건강기능식품" loading="lazy"></div>
+        <div class="body"><h3>건강기능식품</h3><span class="en">Health Supplements</span></div>
+      </div>
+      <div class="indCard">
+        <div class="thumb"><img src="images/industries/dairy.svg" alt="유제품" loading="lazy"></div>
+        <div class="body"><h3>유제품</h3><span class="en">Dairy Products</span></div>
+      </div>
+      <div class="indCard">
+        <div class="thumb"><img src="images/industries/beverage.svg" alt="음료" loading="lazy"></div>
+        <div class="body"><h3>음료</h3><span class="en">Beverages</span></div>
+      </div>
+      <div class="indCard">
+        <div class="thumb"><img src="images/industries/animal-feed.svg" alt="동물사료" loading="lazy"></div>
+        <div class="body"><h3>동물사료</h3><span class="en">Animal Feed</span></div>
+      </div>
+      <div class="indCard">
+        <div class="thumb"><img src="images/industries/medicine.svg" alt="의약품" loading="lazy"></div>
+        <div class="body"><h3>의약품</h3><span class="en">Pharmaceuticals</span></div>
+      </div>
+      <div class="indCard">
+        <div class="thumb"><img src="images/industries/cosmetics.svg" alt="화장품" loading="lazy"></div>
+        <div class="body"><h3>화장품</h3><span class="en">Cosmetics</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 연혁 ================= -->
+<section class="section section--soft" id="history">
+  <div class="container">
+    <div class="secHead">
+      <div>
+        <p class="bluetext">연혁</p>
+        <h2 class="txt2">PLBNB가 걸어온 길</h2>
+      </div>
+    </div>
+    <div class="histWrap">
+      <div class="histIntro">
+        <p class="histLead">30년 이상의 유산균 개발 노하우를 바탕으로 설립된 PLBNB의 발자취입니다.</p>
+      </div>
+      <ol class="histYears">
+      <li>
+        <p class="year">2025</p>
+        <ul>
+        <li>벤처기업확인 - 연구개발유형</li>
+        <li>기술혁신형 중소기업 (Inno-Biz) 인증</li>
+        <li>엠테라파마와 신약 공동개발 MOU 체결</li>
+        </ul>
+      </li>
+      <li>
+        <p class="year">2024</p>
+        <ul>
+        <li>농림축산식품부 고부가가치식품기술개발사업 수주</li>
+        </ul>
+      </li>
+      <li>
+        <p class="year">2023</p>
+        <ul>
+        <li>대표이사 이연희 취임</li>
+        <li>벤처기업인증 (연구개발형)</li>
+        <li>기업부설 마이크로바이옴 연구소 설립</li>
+        </ul>
+      </li>
+      <li>
+        <p class="year">2021</p>
+        <ul>
+        <li>자본금 2억으로 증액</li>
+        </ul>
+      </li>
+      <li>
+        <p class="year">2020</p>
+        <ul>
+        <li>(주)피엘비앤비 설립</li>
+        <li>구리시 토평동 사옥 준공</li>
+        </ul>
+      </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Contact 밴드 ================= -->
+<section class="contactBand" id="contact">
+  <div class="inner">
+    <div>
+      <h2>궁금한 점이 있으신가요?<br>말씀해 주시면 함께 방법을 찾겠습니다.</h2>
+      <p>TEL 031-556-7731 · 경기도 구리시 벌말로 128번길 49-1, 2층</p>
+    </div>
+    <div class="btns">
+      <a class="primary" href="support/contact.html">온라인 문의하기
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="ghost" href="company/location.html">오시는길</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= 푸터 ================= -->
+<div id="footer">
+  <a class="topBtn" href="#" aria-label="맨 위로">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
+  </a>
+  <div class="container">
+    <div class="inner">
+      <div class="ftMain">
+        <div class="ftLogo">
+          <img src="images/logo.png" alt="PLBNB">
+          <p class="ftState">30년 기술력으로,<br>세계 건강을 선도합니다.</p>
+        </div>
+        <dl class="ftList">
+          <div>
+            <dt>회사소개</dt>
+            <dd><a href="company/about.html">회사 개요</a></dd>
+            <dd><a href="company/history.html">연혁</a></dd>
+            <dd><a href="company/location.html">오시는길</a></dd>
+          </div>
+          <div>
+            <dt>사업소개</dt>
+            <dd><a href="business/business.html#service1">주요 서비스</a></dd>
+            <dd><a href="business/business.html#service2">산업 분야</a></dd>
+          </div>
+          <div>
+            <dt>개발현황</dt>
+            <dd><a href="business/development.html#patents">특허 현황</a></dd>
+            <dd><a href="business/development.html#products">개발 제품</a></dd>
+            <dd><a href="business/development.html#strains">균주 정보</a></dd>
+          </div>
+          <div>
+            <dt>고객지원</dt>
+            <dd><a href="support/contact.html">온라인 문의</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="addressWrap">
+        <strong>(주)피엘비앤비</strong> · 대표 이연희, Jennifer Paek · 사업자등록번호 283-81-01980<br>
+        경기도 구리시 벌말로 128번길 49-1, 2층 · TEL 031-556-7731 · E-MAIL bnbjen@naver.com
+      </div>
+      <div class="copyright">
+        <p>COPYRIGHT © PLBNB. ALL RIGHT RESERVED</p>
+        <p>Perfect Life with Probiotic</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+// ===== 스크롤 Reveal 애니메이션 =====
+const observerOptions = {
+  threshold: 0.15,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Reveal 클래스를 가진 모든 요소 관찰
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// 섹션 헤더, 카드 등에 reveal 클래스 자동 추가
+document.addEventListener('DOMContentLoaded', () => {
+  // 섹션 타이틀
+  document.querySelectorAll('.secHead > div > p, .secHead > div > h2').forEach((el, i) => {
+    el.classList.add('reveal');
+    if (i === 0) el.classList.add('stagger-1');
+    else el.classList.add('stagger-2');
+  });
+
+  // 매트 리스트 (사업소개, 산업 등)
+  document.querySelectorAll('.matList > a').forEach((el, i) => {
+    el.classList.add('reveal');
+    el.classList.add(`stagger-${(i % 5) + 1}`);
+  });
+
+  // 서비스 아이템
+  document.querySelectorAll('[class*="serviceSection"] a, [class*="serviceSec"] a').forEach((el, i) => {
+    if (i < 6) {
+      el.classList.add('reveal');
+      el.classList.add(`stagger-${(i % 5) + 1}`);
+    }
+  });
+
+  // 산업 그리드 아이템
+  document.querySelectorAll('[class*="industrySection"] a, [class*="industrySec"] a').forEach((el, i) => {
+    if (i < 8) {
+      el.classList.add('reveal');
+      el.classList.add(`stagger-${(i % 5) + 1}`);
+    }
+  });
+
+  // 통계 섹션
+  const statBoxes = document.querySelectorAll('[class*="statSection"] > div, [class*="statSec"] > div');
+  statBoxes.forEach((el, i) => {
+    el.classList.add('reveal');
+    el.classList.add(`stagger-${(i % 3) + 1}`);
+  });
+});
+
+// ===== 파라렉스 효과 =====
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const scrolled = window.pageYOffset;
+      document.querySelectorAll('.heroSingle .bg, [class*="parallax"]').forEach(el => {
+        if (el) {
+          const yPos = scrolled * 0.5;
+          el.style.backgroundPosition = `center ${yPos}px`;
+        }
+      });
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+
+// ===== 숫자 카운트 애니메이션 =====
+const countElements = document.querySelectorAll('[data-count]');
+const counters = [];
+
+const startCounting = (element) => {
+  const target = parseInt(element.getAttribute('data-count'));
+  let current = 0;
+  const duration = 2000;
+  const startTime = Date.now();
+
+  const count = () => {
+    const elapsed = Date.now() - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easeOutQuad = 1 - Math.pow(1 - progress, 2);
+    current = Math.floor(target * easeOutQuad);
+
+    element.textContent = current.toLocaleString('ko-KR');
+
+    if (progress < 1) {
+      requestAnimationFrame(count);
+    } else {
+      element.textContent = target.toLocaleString('ko-KR');
+    }
+  };
+
+  count();
+};
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+      entry.target.classList.add('counted');
+      startCounting(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+countElements.forEach(el => counterObserver.observe(el));
+
+// ===== 부드러운 스크롤 스파이 =====
+const updateActiveNav = () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('#gnb a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  }, { passive: true });
+};
+
+// ===== 마우스 호버 3D 효과 (선택사항) =====
+const addHoverEffect = (selector) => {
+  document.querySelectorAll(selector).forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = (y - centerY) / 10;
+      const rotateY = (centerX - x) / 10;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  });
+};
+
+// 카드에 3D 호버 효과 적용
+addHoverEffect('.hc');
+addHoverEffect('.matList > a');
+
+// ===== 다양한 애니메이션 자동 적용 =====
+document.addEventListener('DOMContentLoaded', () => {
+  // 버튼에 펄스 호버 효과
+  document.querySelectorAll('.add-button, .btn').forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+      this.style.animation = 'heartbeat 0.6s ease-in-out';
+    });
+    btn.addEventListener('mouseleave', function() {
+      this.style.animation = 'none';
+    });
+  });
+
+  // 리스트 아이템에 물결 효과 (스크롤 시)
+  document.querySelectorAll('.matList > a, [class*="serviceList"] a').forEach((el, i) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('wave-animated')) {
+          entry.target.classList.add('wave-animated');
+          entry.target.style.animation = `wave 0.8s ease-in-out`;
+          entry.target.style.animationDelay = `${(i % 5) * 0.1}s`;
+        }
+      });
+    }, { threshold: 0.3 });
+    observer.observe(el);
+  });
+
+  // 카운터에 펄스 효과
+  document.querySelectorAll('[data-count]').forEach(el => {
+    el.style.animation = 'glow 2s ease-in-out infinite';
+  });
+
+  // 섹션 헤더에 슬라이드 애니메이션 다양화
+  document.querySelectorAll('.secHead').forEach((el, i) => {
+    const animations = ['slideInLeft', 'slideInRight', 'slideInDown'];
+    const animChoice = animations[i % animations.length];
+
+    el.querySelectorAll('p, h2').forEach((child, j) => {
+      child.style.animation = `${animChoice} 0.8s ease-out forwards`;
+      child.style.animationDelay = `${j * 0.15}s`;
+    });
+  });
+
+  // 이미지에 줌 인 효과
+  document.querySelectorAll('.heroSingle .bg, [style*="background-image"]').forEach((el, i) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('image-animated')) {
+          entry.target.classList.add('image-animated');
+          entry.target.style.animation = 'zoomInSmooth 1.2s ease-out forwards';
+        }
+      });
+    }, { threshold: 0.2 });
+    observer.observe(el);
+  });
+
+  // p 태그에 블러 인 효과 (일부)
+  document.querySelectorAll('section > p, .secHead + p').forEach((el, i) => {
+    if (i % 4 === 0) {
+      el.style.animation = 'blurIn 0.9s ease-out forwards';
+      el.style.animationDelay = `${i * 0.1}s`;
+    }
+  });
+
+  // 호버 시 척치 애니메이션 (카드)
+  document.querySelectorAll('.hc, .matList > a').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.animation = 'tada 0.6s ease-in-out';
+    });
+  });
+});
+
+// ===== 스크롤 시 다양한 효과 =====
+let scrollTicking = false;
+window.addEventListener('scroll', () => {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(() => {
+      const scrolled = window.pageYOffset;
+
+      // 백그라운드 이미지 스케일 변형
+      document.querySelectorAll('.heroSingle .bg').forEach(el => {
+        const scale = 1 + scrolled * 0.0001;
+        el.style.transform = `scale(${scale})`;
+      });
+
+      scrollTicking = false;
+    });
+    scrollTicking = true;
+  }
+}, { passive: true });
+
+// ===== 로딩 스켈레톤 (선택사항) =====
+const removeLoadingState = () => {
+  document.querySelectorAll('.loading').forEach(el => {
+    el.classList.remove('loading');
+  });
+};
+
+window.addEventListener('load', removeLoadingState);
+setTimeout(removeLoadingState, 3000);
+
+// ===== 마우스 트래킹 효과 =====
+document.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  // 광선 효과 적용 (섹션 배경)
+  document.querySelectorAll('.sec, section').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const x = mouseX - rect.left;
+    const y = mouseY - rect.top;
+
+    el.style.setProperty('--mouse-x', `${x}px`);
+    el.style.setProperty('--mouse-y', `${y}px`);
+  });
+});
+
+// ===== 텍스트 글자별 애니메이션 =====
+const splitTextIntoSpans = (selector) => {
+  document.querySelectorAll(selector).forEach(el => {
+    if (!el.classList.contains('text-split')) {
+      const text = el.textContent;
+      const spans = text.split('').map((char, i) => {
+        const span = document.createElement('span');
+        span.textContent = char === ' ' ? ' ' : char;
+        span.style.setProperty('--index', i);
+        return span;
+      });
+      el.innerHTML = '';
+      el.classList.add('text-split');
+      spans.forEach(span => el.appendChild(span));
+    }
+  });
+};
+
+// 주요 제목에 텍스트 분할 애니메이션 적용
+document.addEventListener('DOMContentLoaded', () => {
+  splitTextIntoSpans('.secHead h2');
+  splitTextIntoSpans('.heroSingle h2');
+
+  // 분할된 텍스트에 애니메이션
+  document.querySelectorAll('.text-split span').forEach((span, i) => {
+    span.style.animation = `slideUpBounce 0.8s ease-out forwards`;
+    span.style.animationDelay = `${i * 0.05}s`;
+    span.style.display = 'inline-block';
+  });
+});
+
+// ===== 원형 진행률 애니메이션 (데이터 카드) =====
+const createProgressAnimation = () => {
+  const statElements = document.querySelectorAll('[data-count]');
+
+  statElements.forEach(el => {
+    const parent = el.closest('[class*="stat"], [class*="box"], div');
+    if (parent && !parent.hasAttribute('data-progress-set')) {
+      parent.setAttribute('data-progress-set', 'true');
+
+      // 원형 배경에 그라디언트 애니메이션 추가
+      parent.style.background = 'linear-gradient(135deg, transparent, rgba(0, 85, 204, 0.05))';
+      parent.addEventListener('mouseenter', function() {
+        this.style.animation = 'none';
+        this.style.animation = 'rotateBounce 0.6s ease-out';
+      });
+    }
+  });
+};
+
+document.addEventListener('DOMContentLoaded', createProgressAnimation);
+
+// ===== 고급 스크롤 트리거 애니메이션 =====
+const advancedScrollAnimation = () => {
+  const elements = document.querySelectorAll('[class*="sec"], [class*="service"], [class*="industry"], [class*="stat"]');
+
+  const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.classList.contains('scroll-animated')) {
+        entry.target.classList.add('scroll-animated');
+        const animations = ['slideInLeft', 'slideInRight', 'slideInDown', 'zoomInSmooth'];
+        const randomAnim = animations[Math.floor(Math.random() * animations.length)];
+
+        entry.target.style.animation = `${randomAnim} 0.9s ease-out forwards`;
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  elements.forEach(el => scrollObserver.observe(el));
+};
+
+document.addEventListener('DOMContentLoaded', advancedScrollAnimation);
+
+// ===== 호버 시 색상 변화 애니메이션 =====
+document.querySelectorAll('.hc, .matList > a, [class*="card"]').forEach(el => {
+  el.addEventListener('mouseenter', function() {
+    const hueShift = `hue-rotate(${Math.random() * 30}deg)`;
+    this.style.filter = hueShift;
+  });
+
+  el.addEventListener('mouseleave', function() {
+    this.style.filter = 'hue-rotate(0deg)';
+  });
+});
+
+console.log('✨ PLBNB 애니메이션 시스템 활성화 - 20+ 다양한 모션 효과');
+</script>
+</body>
+</html>

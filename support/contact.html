@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>온라인 문의 — PLBNB</title>
+  <meta name="description" content="PLBNB에 온라인으로 문의하세요. 30년 기술력으로 세계 건강을 선도하는 유산균 전문 기업입니다.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../sub.css">
+  <style>
+    .contactContainer { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start; margin-top: 40px; }
+    .contactForm { }
+    .formGroup { margin-bottom: 28px; }
+    .formGroup label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 10px; color: var(--ink); }
+    .formGroup input,
+    .formGroup textarea,
+    .formGroup select {
+      width: 100%; padding: 12px 14px; font-family: inherit; font-size: 15px;
+      border: 1px solid var(--gray-200); border-radius: 6px;
+      color: var(--ink); background: #fff;
+      transition: border-color .2s;
+    }
+    .formGroup input:focus,
+    .formGroup textarea:focus,
+    .formGroup select:focus {
+      outline: none; border-color: var(--point-text);
+    }
+    .formGroup textarea { resize: vertical; min-height: 140px; }
+    .formGroup.checkbox { margin-bottom: 20px; }
+    .formGroup.checkbox label { display: flex; align-items: center; font-weight: 600; margin-bottom: 0; font-size: 14px; }
+    .formGroup.checkbox input { width: auto; margin-right: 10px; }
+    .submitBtn {
+      width: 100%; height: 48px; background: var(--point-text); color: #fff;
+      font-size: 15px; font-weight: 700; border-radius: 6px;
+      cursor: pointer; transition: opacity .2s;
+      border: none;
+    }
+    .submitBtn:hover { opacity: .9; }
+    .submitBtn:disabled { opacity: .5; cursor: not-allowed; }
+    .contactInfo { background: var(--bg-soft); border-radius: var(--card-radius); padding: 32px 24px; }
+    .contactInfo .title { font-size: 18px; font-weight: 800; margin-bottom: 28px; color: var(--ink); }
+    .infoItem { margin-bottom: 24px; }
+    .infoItem:last-child { margin-bottom: 0; }
+    .infoItem .label { font-size: 12px; font-weight: 700; letter-spacing: .1em; color: var(--point-text); text-transform: uppercase; margin-bottom: 6px; }
+    .infoItem .value { font-size: 14px; font-weight: 500; color: var(--ink); line-height: 1.6; }
+    .infoItem .value a { color: var(--point-text); text-decoration: underline; }
+    .infoItem .value a:hover { opacity: .8; }
+    @media (max-width: 1023px) {
+      .contactContainer { grid-template-columns: 1fr; gap: 40px; }
+      .contactInfo { order: -1; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+
+<!-- ================= 헤더 ================= -->
+<div id="header" class="sub">
+  <div class="inner">
+    <a class="logo" href="../index.html" aria-label="PLBNB 홈">
+      <img src="../images/logo.png" alt="PLBNB">
+    </a>
+    <nav id="gnb" aria-label="주 메뉴">
+      <ul>
+        <li>
+          <a href="../company/about.html">회사소개</a>
+          <div class="dep2Menu">
+            <a href="../company/about.html">회사 개요</a>
+            <a href="../company/history.html">연혁</a>
+            <a href="../company/location.html">오시는길</a>
+          </div>
+        </li>
+        <li>
+          <a href="../business/development.html">개발현황</a>
+          <div class="dep2Menu">
+            <a href="../business/development.html#patents">특허 현황</a>
+            <a href="../business/development.html#products">개발 제품</a>
+            <a href="../business/development.html#strains">균주 정보</a>
+          </div>
+        </li>
+        <li>
+          <a href="../business/business.html">사업소개</a>
+          <div class="dep2Menu">
+            <a href="../business/business.html#service1">주요 서비스</a>
+            <a href="../business/business.html#service2">산업 분야</a>
+          </div>
+        </li>
+        <li>
+          <a href="partners.html">협력사</a>
+          <div class="dep2Menu">
+            <a href="partners.html">협력사 소개</a>
+          </div>
+        </li>
+        <li class="on">
+          <a href="contact.html">고객지원</a>
+          <div class="dep2Menu">
+            <a href="notice.html">공지사항</a>
+            <a href="contact.html">온라인 문의</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="subMenu">
+      <a class="contact-link" href="contact.html">온라인 문의</a>
+      <button class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 전체메뉴 오버레이 -->
+<div class="allMenuWrap" aria-hidden="true">
+  <button class="closeBtn" aria-label="전체 메뉴 닫기"></button>
+  <div class="allMenu">
+    <div>
+      <p class="dep1">회사소개</p>
+      <div class="dep2">
+        <a href="../company/about.html">회사 개요</a><a href="../company/history.html">연혁</a><a href="../company/location.html">오시는길</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">개발현황</p>
+      <div class="dep2">
+        <a href="../business/development.html#patents">특허 현황</a><a href="../business/development.html#products">개발 제품</a><a href="../business/development.html#strains">균주 정보</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">사업소개</p>
+      <div class="dep2">
+        <a href="../business/business.html#service1">주요 서비스</a><a href="../business/business.html#service2">산업 분야</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">협력사</p>
+      <div class="dep2">
+        <a href="partners.html">협력사 소개</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">고객지원</p>
+      <div class="dep2">
+        <a href="notice.html">공지사항</a><a href="contact.html">온라인 문의</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 서브 비주얼 ================= -->
+<div class="subMainWrap">
+  <div class="subMain">
+    <span class="bg" style="background-image:url('../images/hero/main.jpg')" aria-hidden="true"></span>
+    <div class="subTitleWrap">
+      <div class="subTitle">
+        <span class="en">CUSTOMER SUPPORT</span>
+        <span class="ko">고객지원</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= 본문 ================= -->
+<div class="subContent">
+  <section class="sec">
+    <h2 class="t4">온라인 문의</h2>
+    <p class="lead">PLBNB에 궁금한 사항이 있으시면 아래 양식을 작성해 주세요. 담당자가 신속하게 답변해 드리겠습니다.</p>
+
+    <div class="contactContainer">
+      <!-- 문의 폼 -->
+      <form class="contactForm" id="contactForm">
+        <div class="formGroup">
+          <label for="name">이름 <span style="color: var(--point-text);">*</span></label>
+          <input type="text" id="name" name="name" placeholder="성명을 입력해주세요" required>
+        </div>
+
+        <div class="formGroup">
+          <label for="phone">연락처 <span style="color: var(--point-text);">*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" required>
+        </div>
+
+        <div class="formGroup">
+          <label for="email">이메일 <span style="color: var(--point-text);">*</span></label>
+          <input type="email" id="email" name="email" placeholder="example@company.com" required>
+        </div>
+
+        <div class="formGroup">
+          <label for="company">회사명</label>
+          <input type="text" id="company" name="company" placeholder="회사명을 입력해주세요">
+        </div>
+
+        <div class="formGroup">
+          <label for="subject">문의 주제 <span style="color: var(--point-text);">*</span></label>
+          <select id="subject" name="subject" required>
+            <option value="">문의 주제를 선택해주세요</option>
+            <option value="product">제품 및 서비스 문의</option>
+            <option value="cooperation">협력 및 제휴 문의</option>
+            <option value="technology">기술 자료 요청</option>
+            <option value="recruitment">채용 문의</option>
+            <option value="other">기타 문의</option>
+          </select>
+        </div>
+
+        <div class="formGroup">
+          <label for="message">문의 내용 <span style="color: var(--point-text);">*</span></label>
+          <textarea id="message" name="message" placeholder="문의 사항을 자세히 입력해주세요" required></textarea>
+        </div>
+
+        <div class="formGroup checkbox">
+          <label for="agree">
+            <input type="checkbox" id="agree" name="agree" required>
+            <span>개인정보 처리방침에 동의합니다</span>
+          </label>
+        </div>
+
+        <button type="submit" class="submitBtn">문의 접수</button>
+      </form>
+
+      <!-- 연락처 정보 -->
+      <div class="contactInfo">
+        <div class="title">PLBNB 연락처</div>
+
+        <div class="infoItem">
+          <div class="label">PHONE</div>
+          <div class="value">
+            <a href="tel:0315567731">031-556-7731</a>
+          </div>
+        </div>
+
+        <div class="infoItem">
+          <div class="label">EMAIL</div>
+          <div class="value">
+            <a href="mailto:bnbjen@naver.com">bnbjen@naver.com</a>
+          </div>
+        </div>
+
+        <div class="infoItem">
+          <div class="label">ADDRESS</div>
+          <div class="value">
+            경기도 구리시 벌말로<br>128번길 49-1, 2층
+          </div>
+        </div>
+
+        <div class="infoItem">
+          <div class="label">BUSINESS HOURS</div>
+          <div class="value">
+            평일 09:00 ~ 18:00<br>
+            (토·일요일 휴무)
+          </div>
+        </div>
+
+        <div class="infoItem">
+          <div class="label">DIRECTIONS</div>
+          <div class="value">
+            <a href="../company/location.html">찾아오시는 길</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<!-- ================= 푸터 ================= -->
+<div id="footer">
+  <a class="topBtn" href="#" aria-label="맨 위로">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
+  </a>
+  <div class="container">
+    <div class="inner">
+      <div class="ftMain">
+        <div class="ftLogo">
+          <img src="../images/logo.png" alt="PLBNB">
+          <p class="ftState">30년 기술력으로,<br>세계 건강을 선도합니다.</p>
+        </div>
+        <dl class="ftList">
+          <div>
+            <dt>회사소개</dt>
+            <dd><a href="../company/about.html">회사 개요</a></dd>
+            <dd><a href="../company/history.html">연혁</a></dd>
+            <dd><a href="../company/location.html">오시는길</a></dd>
+          </div>
+          <div>
+            <dt>사업소개</dt>
+            <dd><a href="../business/business.html#service1">주요 서비스</a></dd>
+            <dd><a href="../business/business.html#service2">산업 분야</a></dd>
+          </div>
+          <div>
+            <dt>개발현황</dt>
+            <dd><a href="../business/development.html#patents">특허 현황</a></dd>
+            <dd><a href="../business/development.html#products">개발 제품</a></dd>
+            <dd><a href="../business/development.html#strains">균주 정보</a></dd>
+          </div>
+          <div>
+            <dt>고객지원</dt>
+            <dd><a href="contact.html">온라인 문의</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="addressWrap">
+        <strong>(주)피엘비앤비</strong> · 대표 이연희, Jennifer Paek · 사업자등록번호 283-81-01980<br>
+        경기도 구리시 벌말로 128번길 49-1, 2층 · TEL 031-556-7731 · E-MAIL bnbjen@naver.com
+      </div>
+      <div class="copyright">
+        <p>COPYRIGHT © PLBNB. ALL RIGHT RESERVED</p>
+        <p>Perfect Life with Probiotic</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../sub.js"></script>
+<script>
+// 간단한 폼 제출 처리
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // 폼 데이터 수집
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData);
+
+  // 실제 구현에서는 서버로 전송
+  console.log('문의 접수:', data);
+
+  // 사용자 피드백
+  alert('문의 감사합니다. 빠른 시간 내에 답변 드리겠습니다.');
+  this.reset();
+});
+</script>
+</body>
+</html>

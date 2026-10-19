@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오시는길 — PLBNB</title>
+  <meta name="description" content="PLBNB 찾아오시는 길. 경기도 구리시 벌말로 128번길 49-1, 2층">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../sub.css">
+  <style>
+    .locationGrid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start; margin-top: 40px; }
+    .locationMap { position: relative; width: 100%; aspect-ratio: 16 / 10; border-radius: var(--card-radius); overflow: hidden; background: #f0f0f0; }
+    .locationMap iframe { width: 100%; height: 100%; border: none; }
+    .locationInfo { padding: 0; }
+    .infoBlock { margin-bottom: 40px; }
+    .infoBlock .label { font-size: 13px; font-weight: 700; letter-spacing: .1em; color: var(--point-text); text-transform: uppercase; margin-bottom: 10px; }
+    .infoBlock .title { font-size: 20px; font-weight: 800; margin-bottom: 14px; }
+    .infoBlock .desc { font-size: 15px; line-height: 1.7; color: var(--ink-700); }
+    .infoBlock .desc em { font-style: normal; color: var(--point-text); font-weight: 600; }
+    .contactCard { border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 20px; background: var(--bg-soft); }
+    .contactCard .item { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+    .contactCard .item:last-child { margin-bottom: 0; }
+    .contactCard .item strong { font-weight: 700; min-width: 60px; color: var(--point-text); font-size: 13px; }
+    .contactCard .item span { color: var(--ink-700); font-size: 14px; }
+    @media (max-width: 1023px) {
+      .locationGrid { grid-template-columns: 1fr; gap: 40px; }
+      .locationMap { aspect-ratio: 16 / 9; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+
+<!-- ================= 헤더 ================= -->
+<div id="header" class="sub">
+  <div class="inner">
+    <a class="logo" href="../index.html" aria-label="PLBNB 홈">
+      <img src="../images/logo.png" alt="PLBNB">
+    </a>
+    <nav id="gnb" aria-label="주 메뉴">
+      <ul>
+        <li class="on">
+          <a href="about.html">회사소개</a>
+          <div class="dep2Menu">
+            <a href="about.html">회사 개요</a>
+            <a href="history.html">연혁</a>
+            <a href="location.html">오시는길</a>
+          </div>
+        </li>
+        <li>
+          <a href="../business/business.html">사업소개</a>
+          <div class="dep2Menu">
+            <a href="../business/business.html#service1">주요 서비스</a>
+            <a href="../business/business.html#service2">산업 분야</a>
+          </div>
+        </li>
+        <li>
+          <a href="../business/development.html">개발현황</a>
+          <div class="dep2Menu">
+            <a href="../business/development.html#patents">특허 현황</a>
+            <a href="../business/development.html#products">개발 제품</a>
+            <a href="../business/development.html#strains">균주 정보</a>
+          </div>
+        </li>
+        <li>
+          <a href="../support/contact.html">고객지원</a>
+          <div class="dep2Menu">
+            <a href="../support/contact.html">온라인 문의</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="subMenu">
+      <a class="contact-link" href="../support/contact.html">온라인 문의</a>
+      <button class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 전체메뉴 오버레이 -->
+<div class="allMenuWrap" aria-hidden="true">
+  <button class="closeBtn" aria-label="전체 메뉴 닫기"></button>
+  <div class="allMenu">
+    <div>
+      <p class="dep1">회사소개</p>
+      <div class="dep2">
+        <a href="about.html">회사 개요</a><a href="history.html">연혁</a><a href="location.html">오시는길</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">사업소개</p>
+      <div class="dep2">
+        <a href="../business/business.html#service1">주요 서비스</a><a href="../business/business.html#service2">산업 분야</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">개발현황</p>
+      <div class="dep2">
+        <a href="../business/development.html#patents">특허 현황</a><a href="../business/development.html#products">개발 제품</a><a href="../business/development.html#strains">균주 정보</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">고객지원</p>
+      <div class="dep2">
+        <a href="../support/contact.html">온라인 문의</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 서브 비주얼 ================= -->
+<div class="subMainWrap">
+  <div class="subMain">
+    <span class="bg" style="background-image:url('../images/hero/main.jpg')" aria-hidden="true"></span>
+    <div class="subTitleWrap">
+      <div class="subTitle">
+        <span class="en">LOCATION</span>
+        <span class="ko">오시는길</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= 본문 ================= -->
+<div class="subContent">
+  <section class="sec">
+    <h2 class="t4">PLBNB 찾아오시는 길</h2>
+
+    <div class="locationGrid">
+      <!-- 지도 -->
+      <div class="locationMap">
+        <!-- 카카오맵 API (실제 구현 시 API 키 필요) -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.8917484667636!2d127.14382499999999!3d37.6241522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b86c84e8e5f4f%3A0x123456789!2s%EB%B2%8C%EB%A7%90%EB%A1%9C%20128%EB%B2%88%EA%B8%B8%2049-1!5e0!3m2!1sko!2skr!4v" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- 위치 정보 -->
+      <div class="locationInfo">
+        <div class="infoBlock">
+          <div class="label">ADDRESS</div>
+          <div class="title">주소</div>
+          <div class="desc">경기도 구리시 벌말로 128번길 49-1, 2층</div>
+        </div>
+
+        <div class="infoBlock">
+          <div class="label">CONTACT</div>
+          <div class="title">연락처</div>
+          <div class="contactCard">
+            <div class="item">
+              <strong>TEL</strong>
+              <span>031-556-7731</span>
+            </div>
+            <div class="item">
+              <strong>E-MAIL</strong>
+              <span>bnbjen@naver.com</span>
+            </div>
+            <div class="item">
+              <strong>FAX</strong>
+              <span>031-556-7732</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="infoBlock">
+          <div class="label">TRANSPORTATION</div>
+          <div class="title">대중교통</div>
+          <div class="desc">
+            <em>지하철</em>: 인천메트로 1호선 토평역 3번 출구, 도보 약 10분<br><br>
+            <em>버스</em>: 광진 버스터미널 인근<br><br>
+            <em>자가용</em>: 건축물 로딩존 주차 가능
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<!-- ================= 푸터 ================= -->
+<div id="footer">
+  <a class="topBtn" href="#" aria-label="맨 위로">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
+  </a>
+  <div class="container">
+    <div class="inner">
+      <div class="ftMain">
+        <div class="ftLogo">
+          <img src="../images/logo.png" alt="PLBNB">
+          <p class="ftState">30년 기술력으로,<br>세계 건강을 선도합니다.</p>
+        </div>
+        <dl class="ftList">
+          <div>
+            <dt>회사소개</dt>
+            <dd><a href="about.html">회사 개요</a></dd>
+            <dd><a href="history.html">연혁</a></dd>
+            <dd><a href="location.html">오시는길</a></dd>
+          </div>
+          <div>
+            <dt>사업소개</dt>
+            <dd><a href="../business/business.html#service1">주요 서비스</a></dd>
+            <dd><a href="../business/business.html#service2">산업 분야</a></dd>
+          </div>
+          <div>
+            <dt>개발현황</dt>
+            <dd><a href="../business/development.html#patents">특허 현황</a></dd>
+            <dd><a href="../business/development.html#products">개발 제품</a></dd>
+            <dd><a href="../business/development.html#strains">균주 정보</a></dd>
+          </div>
+          <div>
+            <dt>고객지원</dt>
+            <dd><a href="../support/contact.html">온라인 문의</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="addressWrap">
+        <strong>(주)피엘비앤비</strong> · 대표 이연희, Jennifer Paek · 사업자등록번호 283-81-01980<br>
+        경기도 구리시 벌말로 128번길 49-1, 2층 · TEL 031-556-7731 · E-MAIL bnbjen@naver.com
+      </div>
+      <div class="copyright">
+        <p>COPYRIGHT © PLBNB. ALL RIGHT RESERVED</p>
+        <p>Perfect Life with Probiotic</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../sub.js"></script>
+</body>
+</html>

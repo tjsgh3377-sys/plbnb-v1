@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>사업소개 — PLBNB</title>
+  <meta name="description" content="PLBNB의 주요 서비스와 산업 분야를 확인하세요.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../sub.css">
+  <style>
+    .serviceGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+    .serviceCard { border: 1px solid var(--gray-200); border-radius: 20px; padding: 24px 20px; background: #fff; transition: all .25s; text-align: center; }
+    .serviceCard:hover { transform: translateY(-4px); box-shadow: 0 10px 26px rgba(10,24,38,.07); }
+    .serviceCard .icon { width: 48px; height: 48px; border-radius: 50%; background: var(--bg-tint); display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 14px; margin-left: auto; margin-right: auto; }
+    .serviceCard h3 { font-size: 17px; font-weight: 800; margin-bottom: 10px; color: var(--ink); }
+    .serviceCard p { font-size: 14px; line-height: 1.6; color: var(--gray-600); }
+    .industryGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
+    .industryCard { border: 1px solid var(--gray-200); border-radius: 20px; padding: 20px 16px; background: #fff; text-align: center; transition: all .25s; }
+    .industryCard:hover { background: var(--bg-tint); transform: translateY(-2px); }
+    .industryCard .icon { font-size: 36px; margin-bottom: 12px; }
+    .industryCard h3 { font-size: 15px; font-weight: 800; margin-bottom: 6px; }
+    .industryCard .en { font-size: 12px; color: var(--gray-500); letter-spacing: .05em; }
+    @media (max-width: 1023px) {
+      .serviceGrid { grid-template-columns: 1fr; }
+      .industryGrid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .industryCard { padding: 16px 12px; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+
+<!-- ================= 헤더 ================= -->
+<div id="header" class="sub">
+  <div class="inner">
+    <a class="logo" href="../index.html" aria-label="PLBNB 홈">
+      <img src="../images/logo.png" alt="PLBNB">
+    </a>
+    <nav id="gnb" aria-label="주 메뉴">
+      <ul>
+        <li>
+          <a href="../company/about.html">회사소개</a>
+          <div class="dep2Menu">
+            <a href="../company/about.html">회사 개요</a>
+            <a href="../company/history.html">연혁</a>
+            <a href="../company/location.html">오시는길</a>
+          </div>
+        </li>
+        <li class="on">
+          <a href="business.html">사업소개</a>
+          <div class="dep2Menu">
+            <a href="business.html#service1">주요 서비스</a>
+            <a href="business.html#service2">산업 분야</a>
+          </div>
+        </li>
+        <li>
+          <a href="development.html">개발현황</a>
+          <div class="dep2Menu">
+            <a href="development.html#patents">특허 현황</a>
+            <a href="development.html#products">개발 제품</a>
+            <a href="development.html#strains">균주 정보</a>
+          </div>
+        </li>
+        <li>
+          <a href="../support/contact.html">고객지원</a>
+          <div class="dep2Menu">
+            <a href="../support/contact.html">온라인 문의</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="subMenu">
+      <a class="contact-link" href="../support/contact.html">온라인 문의</a>
+      <button class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 전체메뉴 오버레이 -->
+<div class="allMenuWrap" aria-hidden="true">
+  <button class="closeBtn" aria-label="전체 메뉴 닫기"></button>
+  <div class="allMenu">
+    <div>
+      <p class="dep1">회사소개</p>
+      <div class="dep2">
+        <a href="../company/about.html">회사 개요</a><a href="../company/history.html">연혁</a><a href="../company/location.html">오시는길</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">사업소개</p>
+      <div class="dep2">
+        <a href="business.html#service1">주요 서비스</a><a href="business.html#service2">산업 분야</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">개발현황</p>
+      <div class="dep2">
+        <a href="development.html#patents">특허 현황</a><a href="development.html#products">개발 제품</a><a href="development.html#strains">균주 정보</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">고객지원</p>
+      <div class="dep2">
+        <a href="../support/contact.html">온라인 문의</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 서브 비주얼 ================= -->
+<div class="subMainWrap">
+  <div class="subMain">
+    <span class="bg" style="background-image:url('../images/hero/main.jpg')" aria-hidden="true"></span>
+    <div class="subTitleWrap">
+      <div class="subTitle">
+        <span class="en">BUSINESS INTRODUCTION</span>
+        <span class="ko">사업소개</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= 본문 ================= -->
+<div class="subContent">
+
+  <!-- ================= 주요 서비스 ================= -->
+  <section class="sec" id="service1">
+    <h2 class="t4">주요 서비스</h2>
+    <p class="lead">PLBNB는 차별화된 유산균 균주와 기술력으로 다양한 산업에 최적의 솔루션을 제공합니다.</p>
+
+    <div class="serviceGrid">
+      <div class="serviceCard">
+        <div class="icon">🧬</div>
+        <h3>균주 개발 및 공급</h3>
+        <p>3,000여 우수 균주 중에서 산업 요구에 맞는 최적의 균주를 선별·배양하여 공급합니다. 식품 및 제약 분야에 즉시 적용 가능한 고순도 균주를 제공합니다.</p>
+      </div>
+      <div class="serviceCard">
+        <div class="icon">🔬</div>
+        <h3>제품 개발 컨설팅</h3>
+        <p>프로바이오틱스 및 포스트바이오틱스 제품 개발의 전 과정을 기술적으로 지원합니다. 타겟 기능성 정의부터 KFDA 신청까지 일괄 컨설팅을 제공합니다.</p>
+      </div>
+      <div class="serviceCard">
+        <div class="icon">🏭</div>
+        <h3>맞춤형 기술이전</h3>
+        <p>독점적 균주 보유권, 배양 기술, 기능성 평가 방법 등을 기술이전으로 제공합니다. 협력사의 생산 규모에 맞는 맞춤형 기술 패키지를 구성합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 산업 분야 ================= -->
+  <section class="sec" id="service2">
+    <h2 class="t4">산업 분야</h2>
+    <p class="lead">PLBNB의 유산균 솔루션은 다양한 산업 분야에서 높은 부가가치를 창출합니다.</p>
+
+    <div class="industryGrid">
+      <div class="industryCard">
+        <div class="icon">🥛</div>
+        <h3>건강기능식품</h3>
+        <span class="en">Health Supplements</span>
+      </div>
+      <div class="industryCard">
+        <div class="icon">🧈</div>
+        <h3>유제품</h3>
+        <span class="en">Dairy Products</span>
+      </div>
+      <div class="industryCard">
+        <div class="icon">🥤</div>
+        <h3>음료</h3>
+        <span class="en">Beverages</span>
+      </div>
+      <div class="industryCard">
+        <div class="icon">🐄</div>
+        <h3>동물사료</h3>
+        <span class="en">Animal Feed</span>
+      </div>
+      <div class="industryCard">
+        <div class="icon">💊</div>
+        <h3>의약품</h3>
+        <span class="en">Pharmaceuticals</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KFDA 기준 품질관리 ================= -->
+  <section class="sec" style="margin-top: 100px;">
+    <h2 class="t4">KFDA 기준 품질관리</h2>
+    <p class="lead">PLBNB는 식품의약품안전처의 엄격한 기준을 따라 최고 수준의 품질 관리를 실시합니다.</p>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px;">
+      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; background: #fff;">
+        <div style="font-size: 13px; font-weight: 700; color: var(--point-text); margin-bottom: 12px; letter-spacing: .05em;">균주 관리</div>
+        <div style="font-size: 15px; color: var(--gray-600); line-height: 1.6;">KFDA 인정 균주보관시설에서 엄격한 기준의 균주 관리 및 보관</div>
+      </div>
+      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; background: #fff;">
+        <div style="font-size: 13px; font-weight: 700; color: var(--point-text); margin-bottom: 12px; letter-spacing: .05em;">검사 분석</div>
+        <div style="font-size: 15px; color: var(--gray-600); line-height: 1.6;">균주 동정·기능성·안전성 검사 및 표준화된 분석 프로토콜 운영</div>
+      </div>
+      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; background: #fff;">
+        <div style="font-size: 13px; font-weight: 700; color: var(--point-text); margin-bottom: 12px; letter-spacing: .05em;">문서화</div>
+        <div style="font-size: 15px; color: var(--gray-600); line-height: 1.6;">모든 개발 및 검사 과정에 대한 완벽한 문서 기록 및 추적 관리</div>
+      </div>
+      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; background: #fff;">
+        <div style="font-size: 13px; font-weight: 700; color: var(--point-text); margin-bottom: 12px; letter-spacing: .05em;">GMP 준수</div>
+        <div style="font-size: 15px; color: var(--gray-600); line-height: 1.6;">식품의약품안전처 GMP 지침 준수 및 정기적 감시체계 운영</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 협력 기업 ================= -->
+  <section class="sec" style="margin-top: 100px;">
+    <h2 class="t4">주요 협력 기업</h2>
+    <p class="lead">PLBNB는 국내 대표 식품·제약 기업들과 협력하며 신뢰받는 파트너입니다.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px;">
+      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; text-align: center; background: #fff;">
+        <div style="font-size: 32px; margin-bottom: 16px;">🥛</div>
+        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">남양유업</h3>
+        <p style="font-size: 15px; color: var(--gray-600);">위력, 위쎈</p>
+      </div>
+      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; text-align: center; background: #fff;">
+        <div style="font-size: 32px; margin-bottom: 16px;">🥛</div>
+        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">불가리스</h3>
+        <p style="font-size: 15px; color: var(--gray-600);">프로바이오틱스 요구르트</p>
+      </div>
+      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; text-align: center; background: #fff;">
+        <div style="font-size: 32px; margin-bottom: 16px;">💊</div>
+        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">종근당건강</h3>
+        <p style="font-size: 15px; color: var(--gray-600);">락토핏</p>
+      </div>
+      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; text-align: center; background: #fff;">
+        <div style="font-size: 32px; margin-bottom: 16px;">🏢</div>
+        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">기타 업체</h3>
+        <p style="font-size: 15px; color: var(--gray-600);">다양한 협력사</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<!-- ================= 푸터 ================= -->
+<div id="footer">
+  <a class="topBtn" href="#" aria-label="맨 위로">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
+  </a>
+  <div class="container">
+    <div class="inner">
+      <div class="ftMain">
+        <div class="ftLogo">
+          <img src="../images/logo.png" alt="PLBNB">
+          <p class="ftState">30년 기술력으로,<br>세계 건강을 선도합니다.</p>
+        </div>
+        <dl class="ftList">
+          <div>
+            <dt>회사소개</dt>
+            <dd><a href="../company/about.html">회사 개요</a></dd>
+            <dd><a href="../company/history.html">연혁</a></dd>
+            <dd><a href="../company/location.html">오시는길</a></dd>
+          </div>
+          <div>
+            <dt>사업소개</dt>
+            <dd><a href="business.html#service1">주요 서비스</a></dd>
+            <dd><a href="business.html#service2">산업 분야</a></dd>
+          </div>
+          <div>
+            <dt>개발현황</dt>
+            <dd><a href="development.html#patents">특허 현황</a></dd>
+            <dd><a href="development.html#products">개발 제품</a></dd>
+            <dd><a href="development.html#strains">균주 정보</a></dd>
+          </div>
+          <div>
+            <dt>고객지원</dt>
+            <dd><a href="../support/contact.html">온라인 문의</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="addressWrap">
+        <strong>(주)피엘비앤비</strong> · 대표 이연희, Jennifer Paek · 사업자등록번호 283-81-01980<br>
+        경기도 구리시 벌말로 128번길 49-1, 2층 · TEL 031-556-7731 · E-MAIL bnbjen@naver.com
+      </div>
+      <div class="copyright">
+        <p>COPYRIGHT © PLBNB. ALL RIGHT RESERVED</p>
+        <p>Perfect Life with Probiotic</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../sub.js"></script>
+</body>
+</html>

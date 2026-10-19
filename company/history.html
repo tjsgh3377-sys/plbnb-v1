@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>연혁 — PLBNB</title>
+  <meta name="description" content="PLBNB의 30년 이상의 유산균 개발 연혁을 확인하세요.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/sub.css">
+  <style>
+    .historySection {
+      margin-top: 80px;
+    }
+
+    .historyLabel {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--point-text);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .historyTitle {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.4;
+      margin-bottom: 100px;
+      max-width: 600px;
+    }
+
+    /* 연도 가로 배치 */
+    .yearTabsWrap {
+      display: flex;
+      gap: 60px;
+      margin-bottom: 50px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .yearTab {
+      font-size: 48px;
+      font-weight: 800;
+      color: #ccc;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: color .3s ease;
+      line-height: 1;
+    }
+
+    .yearTab.active {
+      color: var(--ink);
+    }
+
+    /* 타임라인 (가로) */
+    .timelineWrap {
+      position: relative;
+      height: 60px;
+      margin-bottom: 100px;
+      display: flex;
+      align-items: center;
+    }
+
+    .timelineBase {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 1px;
+      background: #ddd;
+      transform: translateY(-50%);
+    }
+
+    .timelineDotsWrap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transform: translateY(-50%);
+    }
+
+    .timelineDot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #ddd;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .timelineDot .yearLabel {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      font-weight: 600;
+      color: #999;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      transition: color .3s ease;
+    }
+
+    .timelineDot[data-year="2025"] .yearLabel,
+    .timelineDot[data-year="2024"] .yearLabel,
+    .timelineDot[data-year="2023"] .yearLabel,
+    .timelineDot[data-year="2021"] .yearLabel,
+    .timelineDot[data-year="2020"] .yearLabel {
+      display: block;
+    }
+
+    .timelineActiveLine {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 3px;
+      background: var(--point-text);
+      transform: translateY(-50%);
+      z-index: 0;
+      width: 0;
+    }
+
+    .timelineActiveLine.filling {
+      animation: gaugeFlow 3s linear forwards;
+    }
+
+    @keyframes gaugeFlow {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+
+    /* 콘텐츠 그리드 */
+    .historyContentGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .historyPanel {
+      display: none;
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all .4s ease;
+    }
+
+    .historyPanel.active {
+      display: block;
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .historyPanel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .historyPanel li {
+      font-size: 13px;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 10px;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .historyPanel li::before {
+      content: "−";
+      position: absolute;
+      left: 0;
+      color: #999;
+    }
+
+    /* 네비게이션 */
+    .historyNavWrap {
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .historyNav {
+      font-size: 28px;
+      color: var(--ink);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: color .2s;
+      line-height: 1;
+    }
+
+    .historyNav:hover {
+      color: var(--point-text);
+    }
+
+    @media (max-width: 1200px) {
+      .historyTitle {
+        font-size: 28px;
+        margin-bottom: 80px;
+      }
+
+      .yearTabsWrap {
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .yearTab {
+        font-size: 36px;
+      }
+
+      .historyContentGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .historySection {
+        margin-top: 60px;
+      }
+
+      .historyTitle {
+        font-size: 22px;
+        margin-bottom: 60px;
+      }
+
+      .yearTabsWrap {
+        gap: 20px;
+      }
+
+      .yearTab {
+        font-size: 24px;
+      }
+
+      .historyContentGrid {
+        grid-template-columns: 1fr;
+      }
+
+      .historyPanel li {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문 바로가기</a>
+
+<!-- ================= 헤더 ================= -->
+<div id="header" class="sub">
+  <div class="inner">
+    <a class="logo" href="../index.html" aria-label="PLBNB 홈">
+      <img src="../images/logo.png" alt="PLBNB">
+    </a>
+    <nav id="gnb" aria-label="주 메뉴">
+      <ul>
+        <li class="on">
+          <a href="about.html">회사소개</a>
+          <div class="dep2Menu">
+            <a href="about.html">회사 개요</a>
+            <a href="history.html">연혁</a>
+            <a href="location.html">오시는길</a>
+          </div>
+        </li>
+        <li>
+          <a href="../business/business.html">사업소개</a>
+          <div class="dep2Menu">
+            <a href="../business/business.html#service1">주요 서비스</a>
+            <a href="../business/business.html#service2">산업 분야</a>
+          </div>
+        </li>
+        <li>
+          <a href="../business/development.html">개발현황</a>
+          <div class="dep2Menu">
+            <a href="../business/development.html#patents">특허 현황</a>
+            <a href="../business/development.html#products">개발 제품</a>
+            <a href="../business/development.html#strains">균주 정보</a>
+          </div>
+        </li>
+        <li>
+          <a href="../support/contact.html">고객지원</a>
+          <div class="dep2Menu">
+            <a href="../support/contact.html">온라인 문의</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="subMenu">
+      <a class="contact-link" href="../support/contact.html">온라인 문의</a>
+      <button class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 전체메뉴 오버레이 -->
+<div class="allMenuWrap" aria-hidden="true">
+  <button class="closeBtn" aria-label="전체 메뉴 닫기"></button>
+  <div class="allMenu">
+    <div>
+      <p class="dep1">회사소개</p>
+      <div class="dep2">
+        <a href="about.html">회사 개요</a><a href="history.html">연혁</a><a href="location.html">오시는길</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">사업소개</p>
+      <div class="dep2">
+        <a href="../business/business.html#service1">주요 서비스</a><a href="../business/business.html#service2">산업 분야</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">개발현황</p>
+      <div class="dep2">
+        <a href="../business/development.html#patents">특허 현황</a><a href="../business/development.html#products">개발 제품</a><a href="../business/development.html#strains">균주 정보</a>
+      </div>
+    </div>
+    <div>
+      <p class="dep1">고객지원</p>
+      <div class="dep2">
+        <a href="../support/contact.html">온라인 문의</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 서브 비주얼 ================= -->
+<div class="subMainWrap">
+  <div class="subMain">
+    <span class="bg" style="background-image:url('../images/hero/main.jpg')" aria-hidden="true"></span>
+    <div class="subTitleWrap">
+      <div class="subTitle">
+        <span class="en">COMPANY HISTORY</span>
+        <span class="ko">연혁</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= 본문 ================= -->
+<div class="subContent">
+  <section class="sec historySection">
+    <div class="historyLabel">History</div>
+    <h2 class="historyTitle">30년 이상의 유산균 개발 노하우를 바탕으로 설립된 PLBNB의 발자취입니다.</h2>
+
+    <!-- 연도 탭 (가로) -->
+    <div class="yearTabsWrap">
+      <button class="yearTab active" data-year="2020">2020</button>
+      <button class="yearTab" data-year="2021">2021</button>
+      <button class="yearTab" data-year="2023">2023</button>
+      <button class="yearTab" data-year="2024">2024</button>
+      <button class="yearTab" data-year="2025">2025</button>
+    </div>
+
+    <!-- 타임라인 (가로) -->
+    <div class="timelineWrap">
+      <div class="timelineBase"></div>
+      <div class="timelineDotsWrap">
+        <div class="timelineDot" data-year="2020"><span class="yearLabel">2020</span></div>
+        <div class="timelineDot" data-year="2021"><span class="yearLabel">2021</span></div>
+        <div class="timelineDot" data-year="2023"><span class="yearLabel">2023</span></div>
+        <div class="timelineDot" data-year="2024"><span class="yearLabel">2024</span></div>
+        <div class="timelineDot" data-year="2025"><span class="yearLabel">2025</span></div>
+      </div>
+      <div class="timelineActiveLine"></div>
+    </div>
+
+    <!-- 콘텐츠 (3열) -->
+    <div class="historyContentGrid">
+      <div class="historyPanel active" data-year="2020">
+        <ul>
+          <li>(주)피엘비앤비 설립</li>
+          <li>구리시 토평동 사옥 준공</li>
+        </ul>
+      </div>
+
+      <div class="historyPanel" data-year="2021">
+        <ul>
+          <li>자본금 2억으로 증액</li>
+        </ul>
+      </div>
+
+      <div class="historyPanel" data-year="2023">
+        <ul>
+          <li>대표이사 이연희 취임</li>
+          <li>벤처기업인증 (연구개발형)</li>
+          <li>기업부설 마이크로바이옴 연구소 설립</li>
+        </ul>
+      </div>
+
+      <div class="historyPanel" data-year="2024">
+        <ul>
+          <li>농림축산식품부 고부가가치식품기술개발사업 수주</li>
+        </ul>
+      </div>
+
+      <div class="historyPanel" data-year="2025">
+        <ul>
+          <li>벤처기업확인 - 연구개발유형</li>
+          <li>기술혁신형 중소기업 (Inno-Biz) 인증</li>
+          <li>엠테라파마와 신약 공동개발 MOU 체결</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <div class="historyNavWrap">
+      <button class="historyNav prev">‹</button>
+      <button class="historyNav next">›</button>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<!-- ================= 푸터 ================= -->
+<div id="footer">
+  <a class="topBtn" href="#" aria-label="맨 위로">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
+  </a>
+  <div class="container">
+    <div class="inner">
+      <div class="ftMain">
+        <div class="ftLogo">
+          <img src="../images/logo.png" alt="PLBNB">
+          <p class="ftState">30년 기술력으로,<br>세계 건강을 선도합니다.</p>
+        </div>
+        <dl class="ftList">
+          <div>
+            <dt>회사소개</dt>
+            <dd><a href="about.html">회사 개요</a></dd>
+            <dd><a href="history.html">연혁</a></dd>
+            <dd><a href="location.html">오시는길</a></dd>
+          </div>
+          <div>
+            <dt>사업소개</dt>
+            <dd><a href="../business/business.html#service1">주요 서비스</a></dd>
+            <dd><a href="../business/business.html#service2">산업 분야</a></dd>
+          </div>
+          <div>
+            <dt>개발현황</dt>
+            <dd><a href="../business/development.html#patents">특허 현황</a></dd>
+            <dd><a href="../business/development.html#products">개발 제품</a></dd>
+            <dd><a href="../business/development.html#strains">균주 정보</a></dd>
+          </div>
+          <div>
+            <dt>고객지원</dt>
+            <dd><a href="../support/contact.html">온라인 문의</a></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="addressWrap">
+        <strong>(주)피엘비앤비</strong> · 대표 이연희, Jennifer Paek · 사업자등록번호 283-81-01980<br>
+        경기도 구리시 벌말로 128번길 49-1, 2층 · TEL 031-556-7731 · E-MAIL bnbjen@naver.com
+      </div>
+      <div class="copyright">
+        <p>COPYRIGHT © PLBNB. ALL RIGHT RESERVED</p>
+        <p>Perfect Life with Probiotic</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../sub.js"></script>
+
+<script>
+(function() {
+  const years = ['2020', '2021', '2023', '2024', '2025'];
+  let current = 0;
+  let autoPlayTimer = null;
+  const timeline = document.querySelector('.timelineActiveLine');
+
+  function update(idx, animate = false) {
+    current = idx;
+    const year = years[idx];
+
+    // 연도 탭 활성화
+    document.querySelectorAll('.yearTab').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.year === year);
+    });
+
+    // 콘텐츠 패널 활성화
+    document.querySelectorAll('.historyPanel').forEach(panel => {
+      panel.classList.toggle('active', panel.dataset.year === year);
+    });
+
+    // 타임라인 활성선 업데이트
+    const percentage = (idx / (years.length - 1)) * 100;
+
+    if (animate) {
+      // 자동 슬라이드: 게이지 애니메이션
+      timeline.classList.remove('filling');
+      // reflow 강제 (애니메이션 리셋)
+      void timeline.offsetWidth;
+      timeline.classList.add('filling');
+    } else {
+      // 사용자 클릭: 즉시 업데이트 (게이지는 계속 진행)
+      timeline.classList.remove('filling');
+      timeline.style.width = percentage + '%';
+    }
+  }
+
+  function nextYear() {
+    if (current < years.length - 1) {
+      update(current + 1, true);
+    } else {
+      update(0, true); // 마지막에서 처음으로
+    }
+  }
+
+  function startAutoPlay() {
+    autoPlayTimer = setInterval(nextYear, 3000); // 3초마다 자동 진행
+  }
+
+  // 애니메이션 완료 후 타임라인 최종 너비 설정
+  timeline.addEventListener('animationend', function() {
+    const percentage = (current / (years.length - 1)) * 100;
+    timeline.style.width = percentage + '%';
+  });
+
+  // 연도 탭 클릭 (게이지는 계속 진행)
+  document.querySelectorAll('.yearTab').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const idx = years.indexOf(this.dataset.year);
+      update(idx, false);
+    });
+  });
+
+  // 이전 버튼 (게이지는 계속 진행)
+  document.querySelector('.historyNav.prev').addEventListener('click', () => {
+    if (current > 0) update(current - 1, false);
+  });
+
+  // 다음 버튼 (게이지는 계속 진행)
+  document.querySelector('.historyNav.next').addEventListener('click', () => {
+    if (current < years.length - 1) update(current + 1, false);
+  });
+
+  // 초기 설정
+  update(0, false);
+  startAutoPlay();
+})();
+</script>
+</body>
+</html>
