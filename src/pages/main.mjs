@@ -63,6 +63,7 @@ export default function (db) {
     </div>
     <dl class="figList reveal">${company.holdings.map((h) => `
       <div><dt>${esc(h.label)}</dt><dd><strong>${esc(h.value)}</strong><span>${esc(h.note)}</span></dd></div>`).join('')}
+      <div><dt>특허</dt><dd><strong>등록 ${reg}건</strong><span>출원 ${app}건 · 홈페이지 공개 기준</span></dd></div>
     </dl>
   </div>
 </section>

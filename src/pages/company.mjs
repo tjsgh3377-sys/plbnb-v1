@@ -26,7 +26,7 @@ export default function (db) {
 
 <section>
   <h2 class="secTit">연구개발 전문성</h2>
-  <p class="secLead">PLBNB가 보유한 균주 자원입니다. 수치는 회사 소개 자료(2026년 7월) 기준입니다.</p>
+  <p class="secLead">PLBNB가 보유한 균주 자원과 특허입니다.</p>
   <dl class="statRow">${company.holdings.map((h) => `
     <div><dt>${esc(h.label)}</dt><dd><strong>${esc(h.value)}</strong><span>${esc(h.note)}</span></dd></div>`).join('')}
     <div><dt>특허</dt><dd><strong>등록 ${reg}건</strong><span>출원 ${db.patents.length - reg}건 · 홈페이지 공개 기준</span></dd></div>
