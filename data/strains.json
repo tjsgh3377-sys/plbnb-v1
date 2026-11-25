@@ -1,0 +1,127 @@
+{
+  "_안내": "균주 정보. id 는 다른 데이터와 연결되는 고유값이므로 변경하지 마세요. published:false 로 두면 사이트에 노출되지 않습니다. 출처: 「2026 07 회사 제품 소개」, 대표논문 리스트(2026.11.10 조회), 특허증.",
+  "categories": ["락토바실러스 계열", "비피도박테리움", "락토코커스", "바이셀라"],
+  "fields": ["위 건강", "여성 건강", "구강·골", "체지방·대사", "장 건강·면역", "장뇌축·GABA", "비타민 생성", "염증 조절"],
+  "items": [
+    {
+      "id": "pl9988", "name": "PL9988", "species": "Limosilactobacillus fermentum", "speciesKo": "리모시락토바실러스 퍼멘텀",
+      "formerName": "Lactobacillus fermentum", "code": "PL9988", "category": "락토바실러스 계열", "fields": ["장 건강·면역", "염증 조절"],
+      "origin": "국내 장수마을의 건강한 고령자",
+      "summary": "국내 장수마을 8곳의 건강한 고령자에게서 분리한 유산균 가운데 선발한 균주입니다.",
+      "research": [
+        "장수마을 8곳의 80세 초과 건강한 고령자에게서 확보한 유산균 분리주 가운데, 병원균 억제와 항생제 감수성을 기준으로 후보를 선별한 뒤 최종 선발했습니다. (J Microbiol Biotechnol. 2015)",
+        "선발 연구에서 장 부착, 내산성·내담즙성, 면역·항염·항산화 관련 특성이 평가되었습니다.",
+        "후속 연구에서 사람 장세포주(HT-29)와 생쥐 장세포 부착능이 확인되었고, LPS로 자극한 세포와 생쥐 모델에서 염증 관련 사이토카인 변화가 관찰되었습니다. (Int J Probiotics Prebiotics. 2022)"
+      ],
+      "note": "위 내용은 세포·동물 수준의 연구 결과이며, 완제품의 인체 효능을 뜻하지 않습니다.",
+      "related": { "patents": ["10-1452234", "10-1488770"], "products": ["bulgaris", "lactofit", "boryung-jangsu"], "achievements": ["paper-2015-pl9988", "paper-2022-pl9988"], "media": ["yna-20151216", "donga-20140912"] }
+    },
+    {
+      "id": "pl186", "name": "PL186", "species": "Lactococcus lactis", "speciesKo": "락토코커스 락티스",
+      "code": "PL186", "category": "락토코커스", "fields": ["장뇌축·GABA", "비타민 생성"],
+      "origin": "한국인 유래",
+      "summary": "한국인에게서 분리한 락토코커스 균주로, 비타민 B9(엽산) 생성과 GABA 생성에 관한 연구가 진행되었습니다.",
+      "research": [
+        "비타민 B9을 생성하는 균주로 특허 등록되었습니다. (제10-2973622호, 2026)",
+        "생쥐와 사람을 대상으로 GABA 생성능을 살펴본 연구가 학술지에 게재되었습니다. (J Microbiol Biotechnol. 2026)",
+        "GABA를 포함하는 발효 생성물의 생산 방법에 대한 특허가 출원되어 있습니다."
+      ],
+      "note": "연구 단계의 결과이며, 기능성 인정이나 완제품의 효능과는 구분됩니다.",
+      "related": { "patents": ["10-2973622", "10-2025-0129312"], "achievements": ["paper-2026-pl186"] }
+    },
+    {
+      "id": "pl9014", "name": "PL9014", "species": "Levilactobacillus brevis", "speciesKo": "레비락토바실러스 브레비스",
+      "formerName": "Lactobacillus brevis", "code": "PL9014", "category": "락토바실러스 계열", "fields": ["장뇌축·GABA"],
+      "summary": "GABA(감마 아미노부티르산) 생성 연구에 사용되는 균주입니다.",
+      "research": [
+        "부추를 첨가한 발효에서 GABA 생산량이 증가하는 현상을 보고한 연구가 게재되었습니다. (Int J Probiotics Prebiotics. 2026)",
+        "GABA를 포함하는 발효 생성물의 생산 방법에 대한 특허가 출원되어 있습니다."
+      ],
+      "note": "연구 단계의 결과이며, 기능성 인정이나 완제품의 효능과는 구분됩니다.",
+      "related": { "patents": ["10-2025-0011645", "10-2025-0053288"], "achievements": ["paper-2026-pl9014"] }
+    },
+    {
+      "id": "pl1403", "name": "PL1403", "species": "Bifidobacterium longum", "speciesKo": "비피도박테리움 롱검",
+      "code": "PL1403", "category": "비피도박테리움", "fields": ["장뇌축·GABA"],
+      "summary": "GABA 생성 연구에 사용되는 비피도박테리움 균주입니다.",
+      "research": ["GABA를 포함하는 발효 생성물의 생산 방법에 대한 특허가 출원되어 있습니다."],
+      "note": "연구 단계의 결과이며, 기능성 인정이나 완제품의 효능과는 구분됩니다.",
+      "related": { "patents": ["10-2025-0130117"] }
+    },
+    {
+      "id": "bi9988", "name": "BI9988", "species": "Bifidobacterium longum subsp. infantis", "speciesKo": "비피도박테리움 롱검 아종 인판티스",
+      "code": "BI9988", "category": "비피도박테리움", "fields": ["장 건강·면역"],
+      "origin": "국내 장수마을",
+      "summary": "국내 장수마을에서 분리한 비피도박테리움 균주입니다.",
+      "research": [
+        "특허 문헌에 내산성·내담즙성, 장 세포 부착능, 식중독균 억제능 등의 특성이 기재되어 있습니다. (제10-1768678호)",
+        "세포 실험에서 장 표피세포(HT29-MTX) 부착과 대식세포(RAW264.7)의 사이토카인 변화가 관찰되었습니다."
+      ],
+      "note": "위 내용은 특허 문헌과 세포 수준의 연구 결과입니다.",
+      "related": { "patents": ["10-1768678"] }
+    },
+    {
+      "id": "pl60", "name": "PL60", "species": "Lacticaseibacillus rhamnosus", "speciesKo": "락티카제이바실러스 람노서스",
+      "formerName": "Lactobacillus rhamnosus", "code": "PL60", "category": "락토바실러스 계열", "fields": ["체지방·대사", "염증 조절"],
+      "origin": "사람 유래",
+      "summary": "공액리놀레산(CLA)을 생성하는 사람 유래 균주로, 대사 관련 연구가 가장 많이 인용된 균주입니다.",
+      "research": [
+        "식이 유도 비만 생쥐에 8주간 투여한 연구에서 에너지 섭취 감소 없이 체중과 백색지방 무게가 감소했습니다. (Biochim Biophys Acta. 2006)",
+        "사람이 섭취한 뒤 혈청의 CLA 농도가 증가하고 분변에서 균이 검출된 연구가 보고되었습니다. (J Microbiol Biotechnol. 2009)",
+        "염증질환 관련 프로바이오틱스 조성물로 특허 등록되었습니다. (제10-2650558호)"
+      ],
+      "note": "동물실험 결과와 사람의 혈중 대사산물 변화는 실제 체중·체지방 감량 입증과 구분됩니다.",
+      "related": { "patents": ["10-2650558"], "products": ["bulgaris-fit", "coreana-cosmetics"], "achievements": ["paper-2006-pl60", "paper-2009-pl60"], "media": ["fnnews-20080324"] }
+    },
+    {
+      "id": "pl62", "name": "PL62", "species": "Lactiplantibacillus plantarum", "speciesKo": "락티플란티바실러스 플란타룸",
+      "formerName": "Lactobacillus plantarum", "code": "PL62", "category": "락토바실러스 계열", "fields": ["체지방·대사"],
+      "origin": "사람 유래",
+      "summary": "trans-10, cis-12 공액리놀레산(CLA)을 생성하는 사람 유래 균주입니다.",
+      "research": ["비만 생쥐 모델에서 백색지방조직 무게, 체중, 혈당이 감소한 결과가 보고되었습니다. (J Appl Microbiol. 2007)"],
+      "note": "동물실험 결과이며, 사람의 체중 감량 효과를 평가한 임상시험은 아닙니다.",
+      "related": { "achievements": ["paper-2007-pl62"] }
+    },
+    {
+      "id": "pl9001", "name": "PL9001", "species": "Weissella confusa", "speciesKo": "바이셀라 콘푸사",
+      "code": "PL9001", "category": "바이셀라", "fields": ["위 건강", "구강·골"],
+      "summary": "헬리코박터 파일로리의 위세포 부착 억제 연구로 알려진 균주입니다.",
+      "research": [
+        "사람 위세포주(MKN-45)에서 생균과 사균 모두 헬리코박터 부착을 90% 이상 억제했고, 배양 상등액은 헬리코박터의 생존율을 낮추었습니다. (Appl Environ Microbiol. 2002)",
+        "생쥐 두개골 유래 골세포에서 골결절 형성과 칼슘 축적이 증가했고, 충치균(S. mutans)의 골세포 침입이 억제되었습니다. (J Microbiol Biotechnol. 2006)"
+      ],
+      "note": "세포 수준의 연구 결과입니다. 균명은 논문 발표 당시 표기(2002년 Weissella confusa, 2006년 Weissella kimchii)를 따릅니다.",
+      "related": { "achievements": ["paper-2002-pl9001", "paper-2006-pl9001"] }
+    },
+    {
+      "id": "pl9023", "name": "PL9023", "species": "Weissella kimchii", "speciesKo": "바이셀라 김치아이",
+      "code": "PL9023", "category": "바이셀라", "fields": ["여성 건강"],
+      "summary": "과산화수소 생성능이 높아 여성 건강 후보 소재로 연구된 균주입니다.",
+      "research": ["100개가 넘는 유산균 가운데 선발되었으며, 질 유래 유해균(Candida albicans, E. coli, S. aureus, S. agalactiae)의 성장과 부착을 억제한 결과가 보고되었습니다. (FEMS Microbiol Lett. 2005)"],
+      "note": "시험관 수준의 연구 결과입니다.",
+      "related": { "achievements": ["paper-2005-pl9023"] }
+    },
+    {
+      "id": "pl9261", "name": "PL9261", "species": "Limosilactobacillus fermentum", "speciesKo": "리모시락토바실러스 퍼멘텀",
+      "code": "PL9261", "category": "락토바실러스 계열", "fields": ["비타민 생성"],
+      "summary": "비타민 B12를 생성하는 균주로 특허 등록되었습니다.",
+      "research": ["비타민 B12를 생성하는 균주와 이를 유효성분으로 함유하는 조성물로 특허 등록되었습니다. (제10-2836322호, 2025)"],
+      "related": { "patents": ["10-2836322"] }
+    },
+    {
+      "id": "pl1536", "name": "PL1536", "species": "Lacticaseibacillus rhamnosus", "speciesKo": "락티카제이바실러스 람노서스",
+      "code": "PL1536", "category": "락토바실러스 계열", "fields": ["장 건강·면역"],
+      "origin": "한국인 모유",
+      "summary": "한국인 모유에서 분리한 균주입니다.",
+      "research": ["장내 유해세균의 성장 억제 능력에 관한 내용으로 특허 등록되었습니다. (제10-2845919호, 2025)"],
+      "related": { "patents": ["10-2845919"] }
+    },
+    {
+      "id": "pl9119", "name": "PL9119", "species": "Limosilactobacillus fermentum", "speciesKo": "리모시락토바실러스 퍼멘텀",
+      "code": "PL9119", "category": "락토바실러스 계열", "fields": ["장 건강·면역"],
+      "summary": "열 안정성에 관한 내용으로 특허 등록된 균주입니다.",
+      "research": ["다양한 생리활성과 열 안정성에 관한 내용으로 특허 등록되었습니다. (제10-1868517호, 2018)"],
+      "related": { "patents": ["10-1868517"] }
+    }
+  ]
+}

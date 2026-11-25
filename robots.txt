@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /_reference/
+Disallow: /src/
+Disallow: /docs/
+
+Sitemap: https://plbnb.com/sitemap.xml

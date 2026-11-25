@@ -1,298 +1,215 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>공지사항 — PLBNB</title>
-  <meta name="description" content="PLBNB의 최신 공지사항 및 뉴스를 확인하세요.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="icon" href="../favicon.ico" sizes="32x32">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../sub.css">
-  <style>
-    .noticeTable { width: 100%; border-collapse: collapse; margin-top: 40px; }
-    .noticeTable thead { background: var(--gray-100); }
-    .noticeTable th, .noticeTable td { padding: 16px; text-align: left; border-bottom: 1px solid var(--gray-200); }
-    .noticeTable th { font-weight: 700; color: var(--ink); font-size: 14px; }
-    .noticeTable tbody tr { transition: background-color 0.2s; }
-    .noticeTable tbody tr:hover { background-color: var(--bg-soft); }
-    .noticeTable tbody td { font-size: 14px; color: var(--ink); }
-    .noticeTable .notice-date { color: var(--ink-700); font-size: 13px; min-width: 100px; }
-    .noticeTable .notice-title { color: var(--point-text); font-weight: 600; cursor: pointer; text-decoration: none; }
-    .noticeTable .notice-title:hover { text-decoration: underline; }
-    .noticeTable .notice-category { display: inline-block; background: var(--point-text); color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; margin-right: 8px; }
-  </style>
+<!-- 이 파일은 src/build.mjs 가 자동으로 생성합니다. 직접 고치지 말고 data/ 또는 src/ 를 수정한 뒤 다시 빌드하세요. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공지사항 | PLBNB 주식회사 피엘비앤비</title>
+<meta name="description" content="공지사항 페이지로 이동합니다.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PLBNB 주식회사 피엘비앤비">
+<meta property="og:title" content="공지사항 | PLBNB 주식회사 피엘비앤비">
+<meta property="og:description" content="공지사항 페이지로 이동합니다.">
+<meta property="og:url" content="https://plbnb.com/support/notice.html">
+<meta property="og:image" content="https://plbnb.com/images/og-default.png">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/sub.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://plbnb.com/index.html"},{"@type":"ListItem","position":2,"name":"온라인 문의"}]}</script>
+<meta http-equiv="refresh" content="0; url=../board/notice.html">
 </head>
 <body>
-<a class="skip-link" href="#main">본문 바로가기</a>
 
-<!-- ================= 헤더 ================= -->
-<div id="header" class="sub">
+<a class="skip-link" href="#main">본문 바로가기</a>
+<header id="header">
   <div class="inner">
-    <a class="logo" href="../index.html" aria-label="PLBNB 홈">
-      <img src="../images/logo.png" alt="PLBNB">
-    </a>
+    <a class="logo" href="../index.html" aria-label="PLBNB 홈"><img src="../images/logo.svg" alt="PLBNB 주식회사 피엘비앤비" width="164" height="72"></a>
     <nav id="gnb" aria-label="주 메뉴">
       <ul>
         <li>
           <a href="../company/about.html">회사소개</a>
-          <div class="dep2Menu">
-            <a href="../company/about.html">회사 개요</a>
-            <a href="../company/history.html">연혁</a>
-            <a href="../company/location.html">오시는길</a>
-          </div>
-        </li>
-        <li>
-          <a href="../business/development.html">개발현황</a>
-          <div class="dep2Menu">
-            <a href="../business/development.html">특허 현황</a>
-            <a href="../business/development.html">개발 제품</a>
-          </div>
+          <ul class="dep2">
+            <li><a href="../company/about.html">회사 개요</a></li>
+            <li><a href="../company/history.html">회사 연혁</a></li>
+            <li><a href="../company/ceo.html">대표이사 소개</a></li>
+            <li><a href="../company/story.html">리즈 스토리</a></li>
+            <li><a href="../company/location.html">오시는 길</a></li>
+          </ul>
         </li>
         <li>
           <a href="../business/business.html">사업소개</a>
-          <div class="dep2Menu">
-            <a href="../business/business.html">주요 서비스</a>
-            <a href="../business/business.html">산업 분야</a>
-          </div>
+          <ul class="dep2">
+            <li><a href="../business/business.html">주요 연구 분야</a></li>
+            <li><a href="../business/technology.html">보유 기술</a></li>
+            <li><a href="../business/cooperation.html">협력 분야</a></li>
+          </ul>
         </li>
         <li>
-          <a href="partners.html">협력사</a>
-          <div class="dep2Menu">
-            <a href="partners.html">협력사 소개</a>
-          </div>
+          <a href="../business/development.html">개발현황</a>
+          <ul class="dep2">
+            <li><a href="../business/strains.html">균주 정보</a></li>
+            <li><a href="../business/patents.html">특허 현황</a></li>
+            <li><a href="../business/products.html">적용 제품</a></li>
+            <li><a href="../business/achievements.html">기타 연구 성과</a></li>
+          </ul>
         </li>
-        <li class="on">
-          <a href="contact.html">고객지원</a>
-          <div class="dep2Menu">
-            <a href="notice.html">공지사항</a>
-            <a href="contact.html">온라인 문의</a>
-          </div>
+        <li>
+          <a href="../partners/index.html">협력사</a>
+          <ul class="dep2">
+            <li><a href="../partners/index.html">협력사 소개</a></li>
+            <li><a href="../partners/cases.html">협력 사례</a></li>
+            <li><a href="../partners/inquiry.html">사업 제휴 문의</a></li>
+          </ul>
         </li>
+        <li>
+          <a href="../board/notice.html">게시판</a>
+          <ul class="dep2">
+            <li><a href="../board/notice.html">공지사항</a></li>
+            <li><a href="../board/column.html">연구 칼럼</a></li>
+            <li><a href="../board/media.html">언론 보도</a></li>
+          </ul>
+        </li>
+        <li class="shop"><a class="" href="../shop/index.html">쇼핑몰</a></li>
       </ul>
     </nav>
-    <div class="subMenu">
-      <a class="contact-link" href="contact.html">온라인 문의</a>
-      <button class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="util">
+      <a class="contact-link" href="../support/contact.html">온라인 문의</a>
+      <button type="button" class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="mNav"><span></span><span></span><span></span></button>
     </div>
   </div>
-</div>
-
-<!-- 전체메뉴 오버레이 -->
-<div class="allMenuWrap" aria-hidden="true">
-  <button class="closeBtn" aria-label="전체 메뉴 닫기"></button>
-  <div class="allMenu">
-    <div>
-      <p class="dep1">회사소개</p>
-      <div class="dep2">
-        <a href="../company/about.html">회사 개요</a><a href="../company/history.html">연혁</a><a href="../company/location.html">오시는길</a>
-      </div>
-    </div>
-    <div>
-      <p class="dep1">개발현황</p>
-      <div class="dep2">
-        <a href="../business/development.html">특허 현황</a><a href="../business/development.html">개발 제품</a>
-      </div>
-    </div>
-    <div>
-      <p class="dep1">사업소개</p>
-      <div class="dep2">
-        <a href="../business/business.html">주요 서비스</a><a href="../business/business.html">산업 분야</a>
-      </div>
-    </div>
-    <div>
-      <p class="dep1">협력사</p>
-      <div class="dep2">
-        <a href="partners.html">협력사 소개</a>
-      </div>
-    </div>
-    <div>
-      <p class="dep1">고객지원</p>
-      <div class="dep2">
-        <a href="notice.html">공지사항</a><a href="contact.html">온라인 문의</a>
-      </div>
-    </div>
+  <div class="gnbBg" aria-hidden="true"></div>
+</header>
+<div class="mNav" id="mNav" hidden>
+  <div class="mNavHead">
+    <img src="../images/logo.svg" alt="PLBNB 주식회사 피엘비앤비" width="120" height="53">
+    <button type="button" class="mNavClose" aria-label="전체 메뉴 닫기"></button>
   </div>
-</div>
-
-<!-- ================= 서브 비주얼 ================= -->
-<div class="subMainWrap">
-  <div class="subMain">
-    <span class="bg" style="background-image:url('../images/hero/main.jpg')" aria-hidden="true"></span>
-    <div class="subTitleWrap">
-      <div class="subTitle">
-        <span class="en">NOTICE</span>
-        <h1 class="ko">공지사항</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="subMainTab">
-    <h2 class="subDep2Tit">고객지원</h2>
-    <ul class="subTabbar">
-      <li class="on"><a href="notice.html">공지사항</a></li>
-      <li><a href="contact.html">온라인 문의</a></li>
+  <nav aria-label="모바일 메뉴">
+    <ul class="mNavList">
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-0">회사소개</button>
+        <ul class="mDep2" id="mDep2-0" hidden>
+          <li><a href="../company/about.html">회사 개요</a></li>
+          <li><a href="../company/history.html">회사 연혁</a></li>
+          <li><a href="../company/ceo.html">대표이사 소개</a></li>
+          <li><a href="../company/story.html">리즈 스토리</a></li>
+          <li><a href="../company/location.html">오시는 길</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-1">사업소개</button>
+        <ul class="mDep2" id="mDep2-1" hidden>
+          <li><a href="../business/business.html">주요 연구 분야</a></li>
+          <li><a href="../business/technology.html">보유 기술</a></li>
+          <li><a href="../business/cooperation.html">협력 분야</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-2">개발현황</button>
+        <ul class="mDep2" id="mDep2-2" hidden>
+          <li><a href="../business/strains.html">균주 정보</a></li>
+          <li><a href="../business/patents.html">특허 현황</a></li>
+          <li><a href="../business/products.html">적용 제품</a></li>
+          <li><a href="../business/achievements.html">기타 연구 성과</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-3">협력사</button>
+        <ul class="mDep2" id="mDep2-3" hidden>
+          <li><a href="../partners/index.html">협력사 소개</a></li>
+          <li><a href="../partners/cases.html">협력 사례</a></li>
+          <li><a href="../partners/inquiry.html">사업 제휴 문의</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-4">게시판</button>
+        <ul class="mDep2" id="mDep2-4" hidden>
+          <li><a href="../board/notice.html">공지사항</a></li>
+          <li><a href="../board/column.html">연구 칼럼</a></li>
+          <li><a href="../board/media.html">언론 보도</a></li>
+        </ul>
+      </li>
     </ul>
+  </nav>
+  <div class="mNavFoot">
+    <a class="btn" href="../support/contact.html">온라인 문의 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn--line" href="../shop/index.html">쇼핑몰</a>
   </div>
 </div>
 
-<main id="main">
-<section class="subContent">
-
-  <!-- 공지사항 -->
-  <div class="sec">
-    <h2 class="t4">공지사항</h2>
-    <p class="lead">PLBNB의 최신 소식과 공지사항을 전해드립니다.</p>
-
-    <table class="noticeTable">
-      <thead>
-        <tr>
-          <th style="width: 60px;">번호</th>
-          <th>제목</th>
-          <th style="width: 120px;">등록일</th>
-          <th style="width: 80px;">조회</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>
-            <span class="notice-category">채용</span>
-            <a href="#" class="notice-title">2026년 상반기 신입사원 채용 공고</a>
-          </td>
-          <td class="notice-date">2026-10-19</td>
-          <td>156</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>
-            <span class="notice-category">보도</span>
-            <a href="#" class="notice-title">PLBNB, 토종 유산균 기술력으로 국제 특허 확보</a>
-          </td>
-          <td class="notice-date">2026-10-12</td>
-          <td>342</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>
-            <span class="notice-category">공지</span>
-            <a href="#" class="notice-title">고객상담센터 운영시간 안내</a>
-          </td>
-          <td class="notice-date">2026-10-05</td>
-          <td>218</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>
-            <span class="notice-category">제품</span>
-            <a href="#" class="notice-title">신규 프로바이오틱스 제품 출시 안내</a>
-          </td>
-          <td class="notice-date">2026-09-28</td>
-          <td>521</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>
-            <span class="notice-category">공지</span>
-            <a href="#" class="notice-title">기술이전 및 협력 문의 증가로 인한 답변 지연 안내</a>
-          </td>
-          <td class="notice-date">2026-09-21</td>
-          <td>189</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>
-            <span class="notice-category">보도</span>
-            <a href="#" class="notice-title">PLBNB 유산균 균주, 국내 대형 식품사 채택</a>
-          </td>
-          <td class="notice-date">2026-09-15</td>
-          <td>634</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>
-            <span class="notice-category">공지</span>
-            <a href="#" class="notice-title">회사 이전 안내</a>
-          </td>
-          <td class="notice-date">2026-08-30</td>
-          <td>445</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>
-            <span class="notice-category">제품</span>
-            <a href="#" class="notice-title">특허 균주 정보 업데이트 안내</a>
-          </td>
-          <td class="notice-date">2026-08-20</td>
-          <td>367</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- 페이지네이션 -->
-    <div style="display: flex; justify-content: center; gap: 8px; margin-top: 50px;">
-      <a href="#" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--gray-300); border-radius: 4px; color: var(--ink-700); text-decoration: none; font-size: 13px;">«</a>
-      <a href="#" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--gray-300); border-radius: 4px; color: var(--ink-700); text-decoration: none; font-size: 13px;">‹</a>
-      <a href="#" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: var(--point-text); color: white; border-radius: 4px; text-decoration: none; font-size: 13px; font-weight: 600;">1</a>
-      <a href="#" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--gray-300); border-radius: 4px; color: var(--ink-700); text-decoration: none; font-size: 13px;">2</a>
-      <a href="#" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--gray-300); border-radius: 4px; color: var(--ink-700); text-decoration: none; font-size: 13px;">3</a>
-      <a href="#" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--gray-300); border-radius: 4px; color: var(--ink-700); text-decoration: none; font-size: 13px;">›</a>
-      <a href="#" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--gray-300); border-radius: 4px; color: var(--ink-700); text-decoration: none; font-size: 13px;">»</a>
-    </div>
+<div class="subVisual" style="background-image:url('../images/sub/support.jpg')">
+  <div class="inner">
+    <p class="en">Contact</p>
+    <p class="ko">온라인 문의</p>
   </div>
+</div>
+<div class="subBar">
+  <nav class="crumb" aria-label="현재 위치"><ol><li><a href="../index.html">홈</a></li><li aria-current="page">온라인 문의</li></ol></nav>
+</div>
 
-</section>
+<main id="main" class="sub">
+  <div class="pageHead">
+    
+    <h1>공지사항</h1>
+    
+  </div>
+  <section><p class="prose">페이지 주소가 변경되었습니다. 자동으로 이동하지 않으면 아래 버튼을 눌러 주세요.</p><div class="btnRow"><a class="btn" href="../board/notice.html">공지사항 바로가기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></section>
 </main>
 
-<!-- ================= 푸터 ================= -->
-<div id="footer">
-  <a class="topBtn" href="#" aria-label="맨 위로">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
-  </a>
+<footer id="footer">
   <div class="container">
-    <div class="inner">
-      <div class="ftMain">
-        <div class="ftLogo">
-          <img src="../images/logo.png" alt="PLBNB">
-          <p class="ftState">30년 기술력으로,<br>세계 건강을 선도합니다.</p>
+    <div class="ftMain">
+      <div class="ftLogo">
+        <img src="../images/logo.svg" alt="PLBNB 주식회사 피엘비앤비" width="150" height="66" loading="lazy">
+        <p class="ftState">건강한 삶을 위한 과학 기반 프로바이오틱스</p>
+        <p class="ftStateEn">Probiotics for Better Life by Science</p>
+      </div>
+      <nav class="ftNav" aria-label="사이트맵">
+        <div>
+          <h2>회사소개</h2>
+          <ul><li><a href="../company/about.html">회사 개요</a></li><li><a href="../company/history.html">회사 연혁</a></li><li><a href="../company/ceo.html">대표이사 소개</a></li><li><a href="../company/story.html">리즈 스토리</a></li><li><a href="../company/location.html">오시는 길</a></li></ul>
         </div>
-        <dl class="ftList">
-          <div>
-            <dt>회사소개</dt>
-            <dd><a href="../company/about.html">회사 개요</a></dd>
-            <dd><a href="../company/history.html">연혁</a></dd>
-            <dd><a href="../company/location.html">오시는길</a></dd>
-          </div>
-          <div>
-            <dt>사업소개</dt>
-            <dd><a href="../business/business.html">주요 서비스</a></dd>
-          </div>
-          <div>
-            <dt>개발현황</dt>
-            <dd><a href="../business/development.html">특허 현황</a></dd>
-          </div>
-          <div>
-            <dt>고객지원</dt>
-            <dd><a href="notice.html">공지사항</a></dd>
-            <dd><a href="contact.html">온라인 문의</a></dd>
-          </div>
-        </dl>
-      </div>
-      <div class="addressWrap">
-        <strong>(주)피엘비앤비</strong> · 대표 이연희, Jennifer Paek · 사업자등록번호 283-81-01980<br>
-        경기도 구리시 벌말로 128번길 49-1, 2층 · TEL 031-556-7731 · E-MAIL bnbjen@naver.com
-      </div>
-      <div class="copyright">
-        <p>COPYRIGHT © PLBNB. ALL RIGHT RESERVED</p>
-        <p>Perfect Life with Probiotic</p>
-      </div>
+        <div>
+          <h2>사업소개</h2>
+          <ul><li><a href="../business/business.html">주요 연구 분야</a></li><li><a href="../business/technology.html">보유 기술</a></li><li><a href="../business/cooperation.html">협력 분야</a></li></ul>
+        </div>
+        <div>
+          <h2>개발현황</h2>
+          <ul><li><a href="../business/strains.html">균주 정보</a></li><li><a href="../business/patents.html">특허 현황</a></li><li><a href="../business/products.html">적용 제품</a></li><li><a href="../business/achievements.html">기타 연구 성과</a></li></ul>
+        </div>
+        <div>
+          <h2>협력사</h2>
+          <ul><li><a href="../partners/index.html">협력사 소개</a></li><li><a href="../partners/cases.html">협력 사례</a></li><li><a href="../partners/inquiry.html">사업 제휴 문의</a></li></ul>
+        </div>
+        <div>
+          <h2>게시판</h2>
+          <ul><li><a href="../board/notice.html">공지사항</a></li><li><a href="../board/column.html">연구 칼럼</a></li><li><a href="../board/media.html">언론 보도</a></li></ul>
+        </div>
+        <div>
+          <h2>고객지원</h2>
+          <ul>
+            <li><a href="../support/contact.html">온라인 문의</a></li>
+            <li><a class="" href="../shop/index.html">쇼핑몰</a></li>
+            <li><a href="../support/privacy.html">개인정보처리방침</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
+    <address class="ftAddr">
+      <strong>(주)피엘비앤비</strong> <span>대표 이연희, Jennifer Paek</span> <span>사업자등록번호 283-81-01980</span><br>
+      <span>경기도 구리시 벌말로128번길 49-1, 2층 (토평동)</span> <span>TEL <a href="tel:031-556-7731">031-556-7731</a></span> <span>E-MAIL <a href="mailto:bnbjen@naver.com">bnbjen@naver.com</a></span>
+    </address>
+    <p class="ftCopy">COPYRIGHT © PLBNB. ALL RIGHTS RESERVED.</p>
   </div>
-</div>
+  <a class="topBtn" href="#header" aria-label="맨 위로"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V5M5 12l7-7 7 7"/></svg></a>
+</footer>
+<script src="../js/main.js" defer></script>
 
-<script src="../js/main.js"></script>
-<script src="../sub.js"></script>
 </body>
 </html>

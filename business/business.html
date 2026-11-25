@@ -1,298 +1,312 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>사업소개 — PLBNB</title>
-  <meta name="description" content="PLBNB의 주요 서비스와 산업 분야를 확인하세요.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="icon" href="../favicon.ico" sizes="32x32">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../sub.css">
-  <style>
-    .serviceGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
-    .serviceCard { border: 1px solid var(--gray-200); border-radius: 20px; padding: 24px 20px; background: #fff; transition: all .25s; text-align: center; }
-    .serviceCard:hover { transform: translateY(-4px); box-shadow: 0 10px 26px rgba(10,24,38,.07); }
-    .serviceCard .icon { width: 48px; height: 48px; border-radius: 50%; background: var(--bg-tint); display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 14px; margin-left: auto; margin-right: auto; }
-    .serviceCard h3 { font-size: 17px; font-weight: 800; margin-bottom: 10px; color: var(--ink); }
-    .serviceCard p { font-size: 14px; line-height: 1.6; color: var(--gray-600); }
-    .industryGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
-    .industryCard { border: 1px solid var(--gray-200); border-radius: 20px; padding: 20px 16px; background: #fff; text-align: center; transition: all .25s; }
-    .industryCard:hover { background: var(--bg-tint); transform: translateY(-2px); }
-    .industryCard .icon { font-size: 36px; margin-bottom: 12px; }
-    .industryCard h3 { font-size: 15px; font-weight: 800; margin-bottom: 6px; }
-    .industryCard .en { font-size: 12px; color: var(--gray-500); letter-spacing: .05em; }
-    @media (max-width: 1023px) {
-      .serviceGrid { grid-template-columns: 1fr; }
-      .industryGrid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .industryCard { padding: 16px 12px; }
-    }
-  </style>
+<!-- 이 파일은 src/build.mjs 가 자동으로 생성합니다. 직접 고치지 말고 data/ 또는 src/ 를 수정한 뒤 다시 빌드하세요. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>주요 연구 분야 | PLBNB 주식회사 피엘비앤비</title>
+<meta name="description" content="PLBNB의 주요 연구 분야. 장 건강·면역, 장뇌축·GABA, 비타민 생성, 체지방·대사, 위 건강, 여성 건강, 구강·골 분야의 연구 목적과 내용, 관련 균주를 소개합니다.">
+<link rel="canonical" href="https://plbnb.com/business/business.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PLBNB 주식회사 피엘비앤비">
+<meta property="og:title" content="주요 연구 분야 | PLBNB 주식회사 피엘비앤비">
+<meta property="og:description" content="PLBNB의 주요 연구 분야. 장 건강·면역, 장뇌축·GABA, 비타민 생성, 체지방·대사, 위 건강, 여성 건강, 구강·골 분야의 연구 목적과 내용, 관련 균주를 소개합니다.">
+<meta property="og:url" content="https://plbnb.com/business/business.html">
+<meta property="og:image" content="https://plbnb.com/images/og-default.png">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/sub.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://plbnb.com/index.html"},{"@type":"ListItem","position":2,"name":"사업소개","item":"https://plbnb.com/business/business.html"},{"@type":"ListItem","position":3,"name":"주요 연구 분야"}]}</script>
+
 </head>
 <body>
-<a class="skip-link" href="#main">본문 바로가기</a>
 
-<!-- ================= 헤더 ================= -->
-<div id="header" class="sub">
+<a class="skip-link" href="#main">본문 바로가기</a>
+<header id="header">
   <div class="inner">
-    <a class="logo" href="../index.html" aria-label="PLBNB 홈">
-      <img src="../images/logo.png" alt="PLBNB">
-    </a>
+    <a class="logo" href="../index.html" aria-label="PLBNB 홈"><img src="../images/logo.svg" alt="PLBNB 주식회사 피엘비앤비" width="164" height="72"></a>
     <nav id="gnb" aria-label="주 메뉴">
       <ul>
         <li>
           <a href="../company/about.html">회사소개</a>
-          <div class="dep2Menu">
-            <a href="../company/about.html">회사 개요</a>
-            <a href="../company/history.html">연혁</a>
-            <a href="../company/location.html">오시는길</a>
-          </div>
+          <ul class="dep2">
+            <li><a href="../company/about.html">회사 개요</a></li>
+            <li><a href="../company/history.html">회사 연혁</a></li>
+            <li><a href="../company/ceo.html">대표이사 소개</a></li>
+            <li><a href="../company/story.html">리즈 스토리</a></li>
+            <li><a href="../company/location.html">오시는 길</a></li>
+          </ul>
         </li>
         <li class="on">
-          <a href="business.html">사업소개</a>
-          <div class="dep2Menu">
-            <a href="business.html#service1">주요 서비스</a>
-            <a href="business.html#service2">산업 분야</a>
-          </div>
+          <a href="../business/business.html" aria-current="true">사업소개</a>
+          <ul class="dep2">
+            <li><a href="../business/business.html" class="on" aria-current="page">주요 연구 분야</a></li>
+            <li><a href="../business/technology.html">보유 기술</a></li>
+            <li><a href="../business/cooperation.html">협력 분야</a></li>
+          </ul>
         </li>
         <li>
-          <a href="development.html">개발현황</a>
-          <div class="dep2Menu">
-            <a href="development.html#patents">특허 현황</a>
-            <a href="development.html#products">개발 제품</a>
-            <a href="development.html#strains">균주 정보</a>
-          </div>
+          <a href="../business/development.html">개발현황</a>
+          <ul class="dep2">
+            <li><a href="../business/strains.html">균주 정보</a></li>
+            <li><a href="../business/patents.html">특허 현황</a></li>
+            <li><a href="../business/products.html">적용 제품</a></li>
+            <li><a href="../business/achievements.html">기타 연구 성과</a></li>
+          </ul>
         </li>
         <li>
-          <a href="../support/contact.html">고객지원</a>
-          <div class="dep2Menu">
-            <a href="../support/contact.html">온라인 문의</a>
-          </div>
+          <a href="../partners/index.html">협력사</a>
+          <ul class="dep2">
+            <li><a href="../partners/index.html">협력사 소개</a></li>
+            <li><a href="../partners/cases.html">협력 사례</a></li>
+            <li><a href="../partners/inquiry.html">사업 제휴 문의</a></li>
+          </ul>
         </li>
+        <li>
+          <a href="../board/notice.html">게시판</a>
+          <ul class="dep2">
+            <li><a href="../board/notice.html">공지사항</a></li>
+            <li><a href="../board/column.html">연구 칼럼</a></li>
+            <li><a href="../board/media.html">언론 보도</a></li>
+          </ul>
+        </li>
+        <li class="shop"><a class="" href="../shop/index.html">쇼핑몰</a></li>
       </ul>
     </nav>
-    <div class="subMenu">
+    <div class="util">
       <a class="contact-link" href="../support/contact.html">온라인 문의</a>
-      <button class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button type="button" class="mobileMenuBtn" aria-label="전체 메뉴 열기" aria-expanded="false" aria-controls="mNav"><span></span><span></span><span></span></button>
     </div>
+  </div>
+  <div class="gnbBg" aria-hidden="true"></div>
+</header>
+<div class="mNav" id="mNav" hidden>
+  <div class="mNavHead">
+    <img src="../images/logo.svg" alt="PLBNB 주식회사 피엘비앤비" width="120" height="53">
+    <button type="button" class="mNavClose" aria-label="전체 메뉴 닫기"></button>
+  </div>
+  <nav aria-label="모바일 메뉴">
+    <ul class="mNavList">
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-0">회사소개</button>
+        <ul class="mDep2" id="mDep2-0" hidden>
+          <li><a href="../company/about.html">회사 개요</a></li>
+          <li><a href="../company/history.html">회사 연혁</a></li>
+          <li><a href="../company/ceo.html">대표이사 소개</a></li>
+          <li><a href="../company/story.html">리즈 스토리</a></li>
+          <li><a href="../company/location.html">오시는 길</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mDep1" aria-expanded="true" aria-controls="mDep2-1">사업소개</button>
+        <ul class="mDep2" id="mDep2-1">
+          <li><a href="../business/business.html" aria-current="page">주요 연구 분야</a></li>
+          <li><a href="../business/technology.html">보유 기술</a></li>
+          <li><a href="../business/cooperation.html">협력 분야</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-2">개발현황</button>
+        <ul class="mDep2" id="mDep2-2" hidden>
+          <li><a href="../business/strains.html">균주 정보</a></li>
+          <li><a href="../business/patents.html">특허 현황</a></li>
+          <li><a href="../business/products.html">적용 제품</a></li>
+          <li><a href="../business/achievements.html">기타 연구 성과</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-3">협력사</button>
+        <ul class="mDep2" id="mDep2-3" hidden>
+          <li><a href="../partners/index.html">협력사 소개</a></li>
+          <li><a href="../partners/cases.html">협력 사례</a></li>
+          <li><a href="../partners/inquiry.html">사업 제휴 문의</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" class="mDep1" aria-expanded="false" aria-controls="mDep2-4">게시판</button>
+        <ul class="mDep2" id="mDep2-4" hidden>
+          <li><a href="../board/notice.html">공지사항</a></li>
+          <li><a href="../board/column.html">연구 칼럼</a></li>
+          <li><a href="../board/media.html">언론 보도</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="mNavFoot">
+    <a class="btn" href="../support/contact.html">온라인 문의 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn--line" href="../shop/index.html">쇼핑몰</a>
   </div>
 </div>
 
-<!-- 전체메뉴 오버레이 -->
-<div class="allMenuWrap" aria-hidden="true">
-  <button class="closeBtn" aria-label="전체 메뉴 닫기"></button>
-  <div class="allMenu">
-    <div>
-      <p class="dep1">회사소개</p>
-      <div class="dep2">
-        <a href="../company/about.html">회사 개요</a><a href="../company/history.html">연혁</a><a href="../company/location.html">오시는길</a>
-      </div>
-    </div>
-    <div>
-      <p class="dep1">사업소개</p>
-      <div class="dep2">
-        <a href="business.html#service1">주요 서비스</a><a href="business.html#service2">산업 분야</a>
-      </div>
-    </div>
-    <div>
-      <p class="dep1">개발현황</p>
-      <div class="dep2">
-        <a href="development.html#patents">특허 현황</a><a href="development.html#products">개발 제품</a><a href="development.html#strains">균주 정보</a>
-      </div>
-    </div>
-    <div>
-      <p class="dep1">고객지원</p>
-      <div class="dep2">
-        <a href="../support/contact.html">온라인 문의</a>
-      </div>
-    </div>
+<div class="subVisual" style="background-image:url('../images/sub/business.jpg')">
+  <div class="inner">
+    <p class="en">Business</p>
+    <p class="ko">사업소개</p>
   </div>
 </div>
+<div class="subBar">
+  <nav class="crumb" aria-label="현재 위치"><ol><li><a href="../index.html">홈</a></li><li><a href="../business/business.html">사업소개</a></li><li aria-current="page">주요 연구 분야</li></ol></nav>
+</div>
+<nav class="snb" aria-label="사업소개 하위 메뉴">
+  <ul><li class="on"><a href="../business/business.html" aria-current="page">주요 연구 분야</a></li><li><a href="../business/technology.html">보유 기술</a></li><li><a href="../business/cooperation.html">협력 분야</a></li></ul>
+</nav>
 
-<!-- ================= 서브 비주얼 ================= -->
-<div class="subMainWrap">
-  <div class="subMain">
-    <span class="bg" style="background-image:url('../images/hero/main.jpg')" aria-hidden="true"></span>
-    <div class="subTitleWrap">
-      <div class="subTitle">
-        <span class="en">BUSINESS INTRODUCTION</span>
-        <span class="ko">사업소개</span>
-      </div>
-    </div>
+<main id="main" class="sub">
+  <div class="pageHead">
+    
+    <h1>주요 연구 분야</h1>
+    <p class="lead">균주마다 무엇을 하는지 실험으로 확인하고, 그 결과를 논문과 특허로 남깁니다.</p>
   </div>
-</div>
-
-<main id="main">
-
-<!-- ================= 본문 ================= -->
-<div class="subContent">
-
-  <!-- ================= 주요 서비스 ================= -->
-  <section class="sec" id="service1">
-    <h2 class="t4">주요 서비스</h2>
-    <p class="lead">PLBNB는 차별화된 유산균 균주와 기술력으로 다양한 산업에 최적의 솔루션을 제공합니다.</p>
-
-    <div class="serviceGrid">
-      <div class="serviceCard">
-        <div class="icon">🧬</div>
-        <h3>균주 개발 및 공급</h3>
-        <p>3,000여 우수 균주 중에서 산업 요구에 맞는 최적의 균주를 선별·배양하여 공급합니다. 식품 및 제약 분야에 즉시 적용 가능한 고순도 균주를 제공합니다.</p>
-      </div>
-      <div class="serviceCard">
-        <div class="icon">🔬</div>
-        <h3>제품 개발 컨설팅</h3>
-        <p>프로바이오틱스 및 포스트바이오틱스 제품 개발의 전 과정을 기술적으로 지원합니다. 타겟 기능성 정의부터 KFDA 신청까지 일괄 컨설팅을 제공합니다.</p>
-      </div>
-      <div class="serviceCard">
-        <div class="icon">🏭</div>
-        <h3>맞춤형 기술이전</h3>
-        <p>독점적 균주 보유권, 배양 기술, 기능성 평가 방법 등을 기술이전으로 제공합니다. 협력사의 생산 규모에 맞는 맞춤형 기술 패키지를 구성합니다.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= 산업 분야 ================= -->
-  <section class="sec" id="service2">
-    <h2 class="t4">산업 분야</h2>
-    <p class="lead">PLBNB의 유산균 솔루션은 다양한 산업 분야에서 높은 부가가치를 창출합니다.</p>
-
-    <div class="industryGrid">
-      <div class="industryCard">
-        <div class="icon">🥛</div>
-        <h3>건강기능식품</h3>
-        <span class="en">Health Supplements</span>
-      </div>
-      <div class="industryCard">
-        <div class="icon">🧈</div>
-        <h3>유제품</h3>
-        <span class="en">Dairy Products</span>
-      </div>
-      <div class="industryCard">
-        <div class="icon">🥤</div>
-        <h3>음료</h3>
-        <span class="en">Beverages</span>
-      </div>
-      <div class="industryCard">
-        <div class="icon">🐄</div>
-        <h3>동물사료</h3>
-        <span class="en">Animal Feed</span>
-      </div>
-      <div class="industryCard">
-        <div class="icon">💊</div>
-        <h3>의약품</h3>
-        <span class="en">Pharmaceuticals</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= KFDA 기준 품질관리 ================= -->
-  <section class="sec" style="margin-top: 100px;">
-    <h2 class="t4">KFDA 기준 품질관리</h2>
-    <p class="lead">PLBNB는 식품의약품안전처의 엄격한 기준을 따라 최고 수준의 품질 관리를 실시합니다.</p>
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px;">
-      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; background: #fff;">
-        <div style="font-size: 13px; font-weight: 700; color: var(--point-text); margin-bottom: 12px; letter-spacing: .05em;">균주 관리</div>
-        <div style="font-size: 15px; color: var(--gray-600); line-height: 1.6;">KFDA 인정 균주보관시설에서 엄격한 기준의 균주 관리 및 보관</div>
-      </div>
-      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; background: #fff;">
-        <div style="font-size: 13px; font-weight: 700; color: var(--point-text); margin-bottom: 12px; letter-spacing: .05em;">검사 분석</div>
-        <div style="font-size: 15px; color: var(--gray-600); line-height: 1.6;">균주 동정·기능성·안전성 검사 및 표준화된 분석 프로토콜 운영</div>
-      </div>
-      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; background: #fff;">
-        <div style="font-size: 13px; font-weight: 700; color: var(--point-text); margin-bottom: 12px; letter-spacing: .05em;">문서화</div>
-        <div style="font-size: 15px; color: var(--gray-600); line-height: 1.6;">모든 개발 및 검사 과정에 대한 완벽한 문서 기록 및 추적 관리</div>
-      </div>
-      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; background: #fff;">
-        <div style="font-size: 13px; font-weight: 700; color: var(--point-text); margin-bottom: 12px; letter-spacing: .05em;">GMP 준수</div>
-        <div style="font-size: 15px; color: var(--gray-600); line-height: 1.6;">식품의약품안전처 GMP 지침 준수 및 정기적 감시체계 운영</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= 협력 기업 ================= -->
-  <section class="sec" style="margin-top: 100px;">
-    <h2 class="t4">주요 협력 기업</h2>
-    <p class="lead">PLBNB는 국내 대표 식품·제약 기업들과 협력하며 신뢰받는 파트너입니다.</p>
-
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px;">
-      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; text-align: center; background: #fff;">
-        <div style="font-size: 32px; margin-bottom: 16px;">🥛</div>
-        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">남양유업</h3>
-        <p style="font-size: 15px; color: var(--gray-600);">위력, 위쎈</p>
-      </div>
-      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; text-align: center; background: #fff;">
-        <div style="font-size: 32px; margin-bottom: 16px;">🥛</div>
-        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">불가리스</h3>
-        <p style="font-size: 15px; color: var(--gray-600);">프로바이오틱스 요구르트</p>
-      </div>
-      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; text-align: center; background: #fff;">
-        <div style="font-size: 32px; margin-bottom: 16px;">💊</div>
-        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">종근당건강</h3>
-        <p style="font-size: 15px; color: var(--gray-600);">락토핏</p>
-      </div>
-      <div style="border: 1px solid var(--gray-200); border-radius: var(--card-radius); padding: 32px; text-align: center; background: #fff;">
-        <div style="font-size: 32px; margin-bottom: 16px;">🏢</div>
-        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">기타 업체</h3>
-        <p style="font-size: 15px; color: var(--gray-600);">다양한 협력사</p>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-</main>
-
-<!-- ================= 푸터 ================= -->
-<div id="footer">
-  <a class="topBtn" href="#" aria-label="맨 위로">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M5 12l7-7 7 7"/></svg>
-  </a>
-  <div class="container">
-    <div class="inner">
-      <div class="ftMain">
-        <div class="ftLogo">
-          <img src="../images/logo.png" alt="PLBNB">
-          <p class="ftState">30년 기술력으로,<br>세계 건강을 선도합니다.</p>
-        </div>
-        <dl class="ftList">
-          <div>
-            <dt>회사소개</dt>
-            <dd><a href="../company/about.html">회사 개요</a></dd>
-            <dd><a href="../company/history.html">연혁</a></dd>
-            <dd><a href="../company/location.html">오시는길</a></dd>
-          </div>
-          <div>
-            <dt>사업소개</dt>
-            <dd><a href="business.html#service1">주요 서비스</a></dd>
-            <dd><a href="business.html#service2">산업 분야</a></dd>
-          </div>
-          <div>
-            <dt>개발현황</dt>
-            <dd><a href="development.html#patents">특허 현황</a></dd>
-            <dd><a href="development.html#products">개발 제품</a></dd>
-            <dd><a href="development.html#strains">균주 정보</a></dd>
-          </div>
-          <div>
-            <dt>고객지원</dt>
-            <dd><a href="../support/contact.html">온라인 문의</a></dd>
-          </div>
+  
+<section>
+  <ol class="areaList">
+    <li class="area" id="area-1">
+      <div class="area__head"><span class="no">01</span><h2>장 건강·면역</h2><p class="en">Gut Health &amp; Immunity</p></div>
+      <div class="area__body">
+        <dl>
+          <div><dt>연구 목적</dt><dd>한국인에게서 분리한 균주 가운데 장에 잘 부착하고 안전한 균주를 찾습니다.</dd></div>
+          <div><dt>주요 연구 내용</dt><dd>국내 장수마을 8곳의 건강한 고령자와 한국인 모유에서 유산균을 분리하고, 병원균 억제·항생제 감수성·내산성·내담즙성·장 세포 부착능을 평가해 균주를 선발합니다.</dd></div>
+          <div><dt>관련 균주</dt><dd class="chips"><a class="chip" href="../business/strains/pl9988.html">PL9988</a><a class="chip" href="../business/strains/bi9988.html">BI9988</a><a class="chip" href="../business/strains/pl1536.html">PL1536</a><a class="chip" href="../business/strains/pl9119.html">PL9119</a></dd></div>
+          <div><dt>관련 성과</dt><dd>특허 5건 · 논문 2편 <a class="textLink" href="../business/strains.html?field=%EC%9E%A5%20%EA%B1%B4%EA%B0%95%C2%B7%EB%A9%B4%EC%97%AD">이 분야 균주 보기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></dd></div>
         </dl>
       </div>
-      <div class="addressWrap">
-        <strong>(주)피엘비앤비</strong> · 대표 이연희, Jennifer Paek · 사업자등록번호 283-81-01980<br>
-        경기도 구리시 벌말로 128번길 49-1, 2층 · TEL 031-556-7731 · E-MAIL bnbjen@naver.com
+    </li>
+    <li class="area" id="area-2">
+      <div class="area__head"><span class="no">02</span><h2>장뇌축·GABA</h2><p class="en">Gut-Brain Axis &amp; GABA</p></div>
+      <div class="area__body">
+        <dl>
+          <div><dt>연구 목적</dt><dd>유산균이 발효 과정에서 만드는 GABA(감마 아미노부티르산)를 연구합니다.</dd></div>
+          <div><dt>주요 연구 내용</dt><dd>GABA를 생성하는 균주를 선발하고, 부추를 이용해 GABA 생산량을 높이는 발효 방법을 개발하고 있습니다. 생쥐와 사람을 대상으로 한 연구 결과를 학술지에 발표했습니다.</dd></div>
+          <div><dt>관련 균주</dt><dd class="chips"><a class="chip" href="../business/strains/pl186.html">PL186</a><a class="chip" href="../business/strains/pl9014.html">PL9014</a><a class="chip" href="../business/strains/pl1403.html">PL1403</a></dd></div>
+          <div><dt>관련 성과</dt><dd>특허 5건 · 논문 2편 <a class="textLink" href="../business/strains.html?field=%EC%9E%A5%EB%87%8C%EC%B6%95%C2%B7GABA">이 분야 균주 보기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></dd></div>
+        </dl>
       </div>
-      <div class="copyright">
-        <p>COPYRIGHT © PLBNB. ALL RIGHT RESERVED</p>
-        <p>Perfect Life with Probiotic</p>
+    </li>
+    <li class="area" id="area-3">
+      <div class="area__head"><span class="no">03</span><h2>비타민 생성</h2><p class="en">Vitamin Production</p></div>
+      <div class="area__body">
+        <dl>
+          <div><dt>연구 목적</dt><dd>비타민을 스스로 생성하는 균주를 찾습니다.</dd></div>
+          <div><dt>주요 연구 내용</dt><dd>비타민 B9(엽산)을 생성하는 균주와 비타민 B12를 생성하는 균주를 발굴해 각각 특허로 등록했습니다.</dd></div>
+          <div><dt>관련 균주</dt><dd class="chips"><a class="chip" href="../business/strains/pl186.html">PL186</a><a class="chip" href="../business/strains/pl9261.html">PL9261</a></dd></div>
+          <div><dt>관련 성과</dt><dd>특허 3건 · 논문 1편 <a class="textLink" href="../business/strains.html?field=%EB%B9%84%ED%83%80%EB%AF%BC%20%EC%83%9D%EC%84%B1">이 분야 균주 보기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></dd></div>
+        </dl>
       </div>
-    </div>
-  </div>
-</div>
+    </li>
+    <li class="area" id="area-4">
+      <div class="area__head"><span class="no">04</span><h2>체지방·대사</h2><p class="en">Metabolism</p></div>
+      <div class="area__body">
+        <dl>
+          <div><dt>연구 목적</dt><dd>기능성 대사산물을 만드는 유산균과 대사의 관계를 연구합니다.</dd></div>
+          <div><dt>주요 연구 내용</dt><dd>공액리놀레산(CLA)을 생성하는 사람 유래 균주를 선발하고, 비만 동물 모델과 사람의 혈중 CLA 변화를 살펴본 연구를 발표했습니다.</dd></div>
+          <div><dt>관련 균주</dt><dd class="chips"><a class="chip" href="../business/strains/pl60.html">PL60</a><a class="chip" href="../business/strains/pl62.html">PL62</a></dd></div>
+          <div><dt>관련 성과</dt><dd>특허 1건 · 논문 3편 <a class="textLink" href="../business/strains.html?field=%EC%B2%B4%EC%A7%80%EB%B0%A9%C2%B7%EB%8C%80%EC%82%AC">이 분야 균주 보기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></dd></div>
+        </dl>
+      </div>
+    </li>
+    <li class="area" id="area-5">
+      <div class="area__head"><span class="no">05</span><h2>위 건강</h2><p class="en">Gastric Health</p></div>
+      <div class="area__body">
+        <dl>
+          <div><dt>연구 목적</dt><dd>헬리코박터 파일로리의 위세포 부착을 방해하는 유산균을 연구합니다.</dd></div>
+          <div><dt>주요 연구 내용</dt><dd>사람 위세포주에서 헬리코박터의 부착과 성장을 억제하는 균주를 선발해 2002년 국제 학술지에 발표했습니다.</dd></div>
+          <div><dt>관련 균주</dt><dd class="chips"><a class="chip" href="../business/strains/pl9001.html">PL9001</a></dd></div>
+          <div><dt>관련 성과</dt><dd>특허 0건 · 논문 2편 <a class="textLink" href="../business/strains.html?field=%EC%9C%84%20%EA%B1%B4%EA%B0%95">이 분야 균주 보기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></dd></div>
+        </dl>
+      </div>
+    </li>
+    <li class="area" id="area-6">
+      <div class="area__head"><span class="no">06</span><h2>여성 건강</h2><p class="en">Women&#39;s Health</p></div>
+      <div class="area__body">
+        <dl>
+          <div><dt>연구 목적</dt><dd>여성 건강에 적합한 후보 균주를 찾습니다.</dd></div>
+          <div><dt>주요 연구 내용</dt><dd>과산화수소 생성능이 높은 균주를 선발하고, 질 유래 유해균의 성장과 부착 억제를 평가했습니다.</dd></div>
+          <div><dt>관련 균주</dt><dd class="chips"><a class="chip" href="../business/strains/pl9023.html">PL9023</a></dd></div>
+          <div><dt>관련 성과</dt><dd>특허 0건 · 논문 1편 <a class="textLink" href="../business/strains.html?field=%EC%97%AC%EC%84%B1%20%EA%B1%B4%EA%B0%95">이 분야 균주 보기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></dd></div>
+        </dl>
+      </div>
+    </li>
+    <li class="area" id="area-7">
+      <div class="area__head"><span class="no">07</span><h2>구강·골</h2><p class="en">Oral &amp; Bone</p></div>
+      <div class="area__body">
+        <dl>
+          <div><dt>연구 목적</dt><dd>유산균이 구강과 골세포에 미치는 영향을 연구합니다.</dd></div>
+          <div><dt>주요 연구 내용</dt><dd>골세포에서의 골결절 형성과 충치균 억제를 함께 살펴본 세포 연구를 발표했습니다.</dd></div>
+          <div><dt>관련 균주</dt><dd class="chips"><a class="chip" href="../business/strains/pl9001.html">PL9001</a></dd></div>
+          <div><dt>관련 성과</dt><dd>특허 0건 · 논문 2편 <a class="textLink" href="../business/strains.html?field=%EA%B5%AC%EA%B0%95%C2%B7%EA%B3%A8">이 분야 균주 보기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></dd></div>
+        </dl>
+      </div>
+    </li>
+  </ol>
+  <p class="note">위 내용은 세포·동물·인체 연구 단계의 결과를 소개한 것이며, 완제품의 효능이나 기능성 인정과는 구분됩니다.</p>
+</section>
+<section>
+  <h2 class="secTit">진행 중인 연구</h2>
+  <ul class="tagRow"><li>글루텐 저감 유산균</li><li>GABA 유제품 유산균</li><li>곰팡이 억제 유산균</li></ul>
+</section>
 
-<script src="../js/main.js"></script>
-<script src="../sub.js"></script>
+<section class="cta">
+  <div>
+    <h2>함께 연구할 주제가 있으신가요?</h2>
+    <p>연구 분야와 목적을 알려 주시면 담당자가 검토 후 연락드리겠습니다.</p>
+  </div>
+  <a class="btn btn--white" href="../support/contact.html?type=%EA%B3%B5%EB%8F%99%20%EC%97%B0%EA%B5%AC%20%EB%AC%B8%EC%9D%98">공동 연구 문의하기 <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</section>
+</main>
+
+<footer id="footer">
+  <div class="container">
+    <div class="ftMain">
+      <div class="ftLogo">
+        <img src="../images/logo.svg" alt="PLBNB 주식회사 피엘비앤비" width="150" height="66" loading="lazy">
+        <p class="ftState">건강한 삶을 위한 과학 기반 프로바이오틱스</p>
+        <p class="ftStateEn">Probiotics for Better Life by Science</p>
+      </div>
+      <nav class="ftNav" aria-label="사이트맵">
+        <div>
+          <h2>회사소개</h2>
+          <ul><li><a href="../company/about.html">회사 개요</a></li><li><a href="../company/history.html">회사 연혁</a></li><li><a href="../company/ceo.html">대표이사 소개</a></li><li><a href="../company/story.html">리즈 스토리</a></li><li><a href="../company/location.html">오시는 길</a></li></ul>
+        </div>
+        <div>
+          <h2>사업소개</h2>
+          <ul><li><a href="../business/business.html">주요 연구 분야</a></li><li><a href="../business/technology.html">보유 기술</a></li><li><a href="../business/cooperation.html">협력 분야</a></li></ul>
+        </div>
+        <div>
+          <h2>개발현황</h2>
+          <ul><li><a href="../business/strains.html">균주 정보</a></li><li><a href="../business/patents.html">특허 현황</a></li><li><a href="../business/products.html">적용 제품</a></li><li><a href="../business/achievements.html">기타 연구 성과</a></li></ul>
+        </div>
+        <div>
+          <h2>협력사</h2>
+          <ul><li><a href="../partners/index.html">협력사 소개</a></li><li><a href="../partners/cases.html">협력 사례</a></li><li><a href="../partners/inquiry.html">사업 제휴 문의</a></li></ul>
+        </div>
+        <div>
+          <h2>게시판</h2>
+          <ul><li><a href="../board/notice.html">공지사항</a></li><li><a href="../board/column.html">연구 칼럼</a></li><li><a href="../board/media.html">언론 보도</a></li></ul>
+        </div>
+        <div>
+          <h2>고객지원</h2>
+          <ul>
+            <li><a href="../support/contact.html">온라인 문의</a></li>
+            <li><a class="" href="../shop/index.html">쇼핑몰</a></li>
+            <li><a href="../support/privacy.html">개인정보처리방침</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <address class="ftAddr">
+      <strong>(주)피엘비앤비</strong> <span>대표 이연희, Jennifer Paek</span> <span>사업자등록번호 283-81-01980</span><br>
+      <span>경기도 구리시 벌말로128번길 49-1, 2층 (토평동)</span> <span>TEL <a href="tel:031-556-7731">031-556-7731</a></span> <span>E-MAIL <a href="mailto:bnbjen@naver.com">bnbjen@naver.com</a></span>
+    </address>
+    <p class="ftCopy">COPYRIGHT © PLBNB. ALL RIGHTS RESERVED.</p>
+  </div>
+  <a class="topBtn" href="#header" aria-label="맨 위로"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V5M5 12l7-7 7 7"/></svg></a>
+</footer>
+<script src="../js/main.js" defer></script>
+
 </body>
 </html>
