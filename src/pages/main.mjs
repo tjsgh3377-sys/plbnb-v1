@@ -83,9 +83,9 @@ export default function (db) {
       <div class="matMarquee" aria-label="주요 협력사 목록">
         <div class="swiper-wrapper">${db.partners.map((p) => `
           <div class="matCard">
+            <div class="logoBox">${p.logo ? `<img src="@/${p.logo}" alt="" loading="lazy">` : `<span>${esc(p.company)}</span>`}</div>
             <p class="en">${esc(p.field)}</p>
             <h3>${esc(p.company)}</h3>
-            <p>${esc(p.summary)}</p>
             <dl class="brand"><dt>제품 브랜드</dt><dd>${p.brands.length ? esc(p.brands.join(' · ')) : '—'}</dd></dl>
           </div>`).join('')}
         </div>
@@ -165,7 +165,7 @@ export default function (db) {
       <div class="histIntro">
         <p class="bluetext">History</p>
         <h2 class="txt2">PLBNB가<br>걸어온 길</h2>
-        <p class="histLead">1999년 균주은행에서 시작된 연구가 ${esc(site.founded)}년 ${esc(site.legalNameShort)} 설립으로 이어졌습니다.</p>
+        <p class="histLead">1999년 항생제내성균주은행에서 시작된 연구가 ${esc(site.founded)}년 ${esc(site.legalNameShort)} 설립으로 이어졌습니다.</p>
         ${btn('@/company/history.html', '회사 연혁 전체 보기')}
       </div>
       <ol class="histYears">${company.history.slice(0, 4).map((y) => `

@@ -110,6 +110,7 @@ ${prevNext(db.columns, i, cUrl)}
     <li data-item data-text="${esc([m.title, m.press, m.summary].join(' ').toLowerCase())}">
       <div class="media__date"><time datetime="${m.date}"><strong>${m.date.slice(0, 4)}</strong>${m.date.slice(5).replace('-', '.')}</time></div>
       <div class="media__body">
+        ${m.thumb ? `<a class="media__thumb" href="${mUrl(m)}" tabindex="-1" aria-hidden="true"><img src="@/${m.thumb}" alt="" loading="lazy"></a>` : ''}
         <p class="press">${esc(m.press)}</p>
         <h2><a href="${mUrl(m)}">${esc(m.title)}</a></h2>
         <p class="sum">${esc(m.summary)}</p>
@@ -122,7 +123,7 @@ ${prevNext(db.columns, i, cUrl)}
 </section>`,
   });
   db.media.forEach((m, i) => pages.push({
-    path: `board/media/${m.id}.html`, group: 'board', item: 'media', crumb: '보도 상세', title: `${m.title} | ${m.press}`, h1: m.title, eyebrow: `${m.press} · ${fmtDate(m.date)}`,
+    path: `board/media/${m.id}.html`, group: 'board', item: 'media', crumb: '보도 상세', title: `${m.title.replace(/"/g, '')} | ${m.press}`, h1: m.title, eyebrow: `${m.press} · ${fmtDate(m.date)}`,
     desc: `${m.press} ${fmtDate(m.date)} 보도. ${m.summary}`, lastmod: m.date,
     body: `
 <article class="post">
@@ -132,6 +133,7 @@ ${prevNext(db.columns, i, cUrl)}
   </dl>
   <h2 class="secTit">기사 요약</h2>
   <p class="prose">${esc(m.summary)}</p>
+  ${m.thumb ? `<figure class="clip"><img src="@/${m.thumb}" alt="${esc(m.press)} ${fmtDate(m.date)} 지면 기사 미리보기" loading="lazy"><figcaption>지면 기사 미리보기 (저작권 보호를 위해 작은 크기로만 제공합니다)</figcaption></figure>` : ''}
   ${m.url ? `<div class="btnRow">${ext(m.url, '기사 원문 보기', 'btn')}</div>` : '<p class="note">이 보도는 온라인 원문 링크가 확인되지 않아 요약만 제공합니다.</p>'}
 </article>
 ${relatedBlock(db.rel.of('media', m.id), ['strains', 'patents', 'products', 'achievements', 'cases', 'columns'])}

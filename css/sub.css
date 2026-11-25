@@ -372,3 +372,20 @@ a.chip:hover { border-color: var(--brand-blue); background: #fff; }
   .boardTable td { height: auto; padding: 0; border: 0; width: auto !important; } .boardTable .c-tit { grid-column: 1 / -1; order: -1; } .boardTable .c-tit a { padding: 4px 0 8px; } .boardTable .c-date { grid-column: 3; }
   .prevNext > * { grid-template-columns: 76px 1fr; } .inqForm .row2 { grid-template-columns: 1fr; } .inqForm .btn--lg { width: 100%; }
 }
+
+/* ---------- 추가: 연혁 월, 로고, 기사 미리보기 ---------- */
+.timeline ul li .mon { flex: none; width: 44px; font-size: 16.5px; font-weight: 800; color: var(--point-text); }
+.partnerTable tbody th img { display: block; max-height: 48px; max-width: 170px; width: auto; margin-bottom: 8px; }
+.partnerTable .wordmark { font-size: 20px; }
+.partnerTable td .sum { display: block; }
+.partnerTable td .textLink { margin-top: 6px; font-size: 16px; }
+.product__body h2 small { font-size: 17px; font-weight: 600; color: var(--gray-500); margin-left: 8px; }
+.product__img img { padding: 14px; background: #fff; border: 1px solid var(--gray-200); }
+.split__media img[src*="/products/"] { object-fit: contain; background: #fff; border: 1px solid var(--gray-200); padding: 24px; }
+.media__body { display: grid; grid-template-columns: 1fr; }
+.media__body:has(.media__thumb) { grid-template-columns: 108px 1fr; column-gap: 22px; }
+.media__thumb { grid-row: 1 / span 3; align-self: start; display: block; height: 124px; overflow: hidden; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--bg-soft); }
+.media__thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.clip { margin-top: 28px; max-width: 360px; } .clip img { border: 1px solid var(--gray-200); border-radius: 6px; } .clip figcaption { margin-top: 8px; font-size: 15px; color: var(--gray-600); }
+.gallery { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+@media (max-width: 767px) { .media__body:has(.media__thumb) { grid-template-columns: 84px 1fr; column-gap: 14px; } .media__thumb { height: 100px; } .timeline ul li .mon { width: auto; } }

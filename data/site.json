@@ -13,8 +13,8 @@
   "founded": "2020",
   "address": "경기도 구리시 벌말로128번길 49-1, 2층 (토평동)",
   "addressMapQuery": "경기도 구리시 벌말로128번길 49-1",
-  "tel": "031-556-7731",
-  "fax": "031-556-7732",
+  "tel": "031-556-7730",
+  "fax": "031-556-7731",
   "email": "bnbjen@naver.com",
   "businessHours": "평일 09:00 ~ 18:00 (토·일·공휴일 휴무)",
   "shop": {
@@ -26,7 +26,14 @@
   "inquiry": {
     "_안내": "endpoint 가 비어 있으면 방문자의 메일 프로그램으로 문의 내용을 전달합니다(mailto). 폼 수신 서비스나 자체 서버 주소를 넣으면 그 주소로 전송하고, 정상 응답을 받은 경우에만 접수 완료를 표시합니다.",
     "endpoint": "",
-    "types": ["균주 공급 문의", "공동 연구 문의", "기술 협력 문의", "적용 제품 관련 문의", "사업 제휴 문의", "기타 문의"]
+    "types": [
+      "균주 공급 문의",
+      "공동 연구 문의",
+      "기술 협력 문의",
+      "적용 제품 관련 문의",
+      "사업 제휴 문의",
+      "기타 문의"
+    ]
   },
   "privacy": {
     "_안내": "개인정보 수집 목적·보유기간은 고객사 확정 후 수정하세요.",
@@ -37,48 +44,146 @@
   },
   "menu": [
     {
-      "key": "company", "label": "회사소개", "en": "Company", "href": "company/about.html", "visual": "images/sub/company.jpg",
+      "key": "company",
+      "label": "회사소개",
+      "en": "Company",
+      "href": "company/about.html",
+      "visual": "images/sub/company.jpg",
       "items": [
-        { "key": "about", "label": "회사 개요", "href": "company/about.html" },
-        { "key": "history", "label": "회사 연혁", "href": "company/history.html" },
-        { "key": "ceo", "label": "대표이사 소개", "href": "company/ceo.html" },
-        { "key": "story", "label": "리즈 스토리", "href": "company/story.html" },
-        { "key": "location", "label": "오시는 길", "href": "company/location.html" }
+        {
+          "key": "about",
+          "label": "회사 개요",
+          "href": "company/about.html"
+        },
+        {
+          "key": "history",
+          "label": "회사 연혁",
+          "href": "company/history.html"
+        },
+        {
+          "key": "ceo",
+          "label": "대표이사 소개",
+          "href": "company/ceo.html"
+        },
+        {
+          "key": "story",
+          "label": "리즈 스토리",
+          "href": "company/story.html"
+        },
+        {
+          "key": "location",
+          "label": "오시는 길",
+          "href": "company/location.html"
+        }
       ]
     },
     {
-      "key": "business", "label": "사업소개", "en": "Business", "href": "business/business.html", "visual": "images/sub/business.jpg",
+      "key": "business",
+      "label": "사업소개",
+      "en": "Business",
+      "href": "business/business.html",
+      "visual": "images/sub/business.jpg",
       "items": [
-        { "key": "research", "label": "주요 연구 분야", "href": "business/business.html" },
-        { "key": "technology", "label": "보유 기술", "href": "business/technology.html" },
-        { "key": "cooperation", "label": "협력 분야", "href": "business/cooperation.html" }
+        {
+          "key": "research",
+          "label": "주요 연구 분야",
+          "href": "business/business.html"
+        },
+        {
+          "key": "technology",
+          "label": "보유 기술",
+          "href": "business/technology.html"
+        },
+        {
+          "key": "cooperation",
+          "label": "협력 분야",
+          "href": "business/cooperation.html"
+        }
       ]
     },
     {
-      "key": "development", "label": "개발현황", "en": "Research & Development", "href": "business/development.html", "visual": "images/sub/development.jpg",
+      "key": "development",
+      "label": "개발현황",
+      "en": "Research & Development",
+      "href": "business/development.html",
+      "visual": "images/sub/development.jpg",
       "items": [
-        { "key": "strains", "label": "균주 정보", "href": "business/strains.html" },
-        { "key": "patents", "label": "특허 현황", "href": "business/patents.html" },
-        { "key": "products", "label": "적용 제품", "href": "business/products.html" },
-        { "key": "achievements", "label": "기타 연구 성과", "href": "business/achievements.html" }
+        {
+          "key": "strains",
+          "label": "균주 정보",
+          "href": "business/strains.html"
+        },
+        {
+          "key": "patents",
+          "label": "특허 현황",
+          "href": "business/patents.html"
+        },
+        {
+          "key": "products",
+          "label": "적용 제품",
+          "href": "business/products.html"
+        },
+        {
+          "key": "achievements",
+          "label": "기타 연구 성과",
+          "href": "business/achievements.html"
+        }
       ]
     },
     {
-      "key": "partners", "label": "협력사", "en": "Partners", "href": "partners/index.html", "visual": "images/sub/partners.jpg",
+      "key": "partners",
+      "label": "협력사",
+      "en": "Partners",
+      "href": "partners/index.html",
+      "visual": "images/sub/partners.jpg",
       "items": [
-        { "key": "partners", "label": "협력사 소개", "href": "partners/index.html" },
-        { "key": "cases", "label": "협력 사례", "href": "partners/cases.html" },
-        { "key": "inquiry", "label": "사업 제휴 문의", "href": "partners/inquiry.html" }
+        {
+          "key": "partners",
+          "label": "협력사 소개",
+          "href": "partners/index.html"
+        },
+        {
+          "key": "cases",
+          "label": "협력 사례",
+          "href": "partners/cases.html"
+        },
+        {
+          "key": "inquiry",
+          "label": "사업 제휴 문의",
+          "href": "partners/inquiry.html"
+        }
       ]
     },
     {
-      "key": "board", "label": "게시판", "en": "Research & News", "href": "board/notice.html", "visual": "images/sub/board.jpg",
+      "key": "board",
+      "label": "게시판",
+      "en": "Research & News",
+      "href": "board/notice.html",
+      "visual": "images/sub/board.jpg",
       "items": [
-        { "key": "notice", "label": "공지사항", "href": "board/notice.html" },
-        { "key": "column", "label": "연구 칼럼", "href": "board/column.html" },
-        { "key": "media", "label": "언론 보도", "href": "board/media.html" }
+        {
+          "key": "notice",
+          "label": "공지사항",
+          "href": "board/notice.html"
+        },
+        {
+          "key": "column",
+          "label": "연구 칼럼",
+          "href": "board/column.html"
+        },
+        {
+          "key": "media",
+          "label": "언론 보도",
+          "href": "board/media.html"
+        }
       ]
     }
   ],
-  "support": { "key": "support", "label": "온라인 문의", "en": "Contact", "href": "support/contact.html", "visual": "images/sub/support.jpg" }
+  "support": {
+    "key": "support",
+    "label": "온라인 문의",
+    "en": "Contact",
+    "href": "support/contact.html",
+    "visual": "images/sub/support.jpg"
+  }
 }

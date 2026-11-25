@@ -17,10 +17,10 @@ export default function (db) {
     <thead><tr><th scope="col">기업명</th><th scope="col">협력 분야</th><th scope="col">제품 브랜드</th><th scope="col">협력 내용</th></tr></thead>
     <tbody>${db.partners.map((p) => `
       <tr id="${p.id}">
-        <th scope="row">${p.logo ? `<img src="@/${p.logo}" alt="${esc(p.company)}" loading="lazy">` : `<span class="wordmark">${esc(p.company)}</span>`}</th>
+        <th scope="row">${p.logo ? `<img src="@/${p.logo}" alt="" loading="lazy">` : ''}<span class="wordmark">${esc(p.company)}</span></th>
         <td data-th="협력 분야">${esc(p.field)}</td>
         <td data-th="제품 브랜드">${p.brands.length ? p.brands.map((b, i) => (p.products && p.products[i]) ? `<a class="chip" href="@/business/products/${p.products[i]}.html">${esc(b)}</a>` : `<span class="chip">${esc(b)}</span>`).join('') : '—'}</td>
-        <td data-th="협력 내용">${esc(p.summary)}${p.url ? ` ${ext(p.url, '공식 홈페이지', 'textLink')}` : ''}</td>
+        <td data-th="협력 내용">${p.summary ? `<span class="sum">${esc(p.summary)}</span>` : ''}${p.url ? ext(p.url, '공식 홈페이지', 'textLink') : ''}${!p.summary && !p.url ? '—' : ''}</td>
       </tr>`).join('')}
     </tbody>
   </table>

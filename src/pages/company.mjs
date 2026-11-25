@@ -18,7 +18,7 @@ export default function (db) {
   <div class="split__text">
     <h2 class="secTit">연구에서 출발한 기업</h2>
     <p>${esc(site.legalName)}는 미생물 연구자가 30년 넘게 수집하고 검증해 온 유산균을 산업 현장에 연결하기 위해 ${esc(site.founded)}년 설립되었습니다.</p>
-    <p>회사의 뿌리는 1999년부터 운영해 온 항생제내성균주은행과 2001년 시작한 마이크로바이옴 연구에 있습니다. 균주를 발굴하고, 기능을 실험으로 검증하고, 특허와 논문으로 근거를 남기는 연구 방식이 지금의 균주와 기술을 만들었습니다.</p>
+    <p>회사의 뿌리는 1999년 설립한 항생제내성균주은행(CCARM)과 2001년 설립한 프로바이오틱 연구소에 있습니다. 균주를 발굴하고, 기능을 실험으로 검증하고, 특허와 논문으로 근거를 남기는 연구 방식이 지금의 균주와 기술을 만들었습니다.</p>
     <p>${esc(company.vision)}</p>
   </div>
   <div class="split__media">${img('images/hero/research.jpg', 'DNA 이중나선 그래픽', '', 1200, 900)}</div>
@@ -38,7 +38,7 @@ export default function (db) {
   <ol class="numList">
     <li><h3>연구자가 직접 발굴한 균주</h3><p>국내 장수마을, 모유 등 한국인에게서 분리한 균주를 직접 선발하고 보존합니다.</p></li>
     <li><h3>논문과 특허로 남긴 근거</h3><p>균주별 연구 결과를 국제 학술지 논문과 특허로 공개해 왔습니다. 연구 단계와 적용 범위를 구분해 안내합니다.</p></li>
-    <li><h3>균주은행 운영 경험</h3><p>균주의 수집·동정·보존·분양을 오랫동안 수행해 온 경험이 균주 품질 관리의 바탕입니다.</p></li>
+    <li><h3>균주은행 운영 경험과 전용 실험실</h3><p>균주의 수집·동정·보존·분양을 오랫동안 수행해 왔으며, 유산균 개발에 맞춘 실험실(BSL2)을 갖추고 있습니다.</p></li>
     <li><h3>제품 적용 실적</h3><p>PLBNB의 균주는 유제품, 건강기능식품, 화장품 분야 고객사 제품에 적용되었습니다.</p></li>
   </ol>
   <div class="btnRow">${btn('@/business/strains.html', '균주 정보 보기')}${btn('@/business/patents.html', '특허 현황 보기', 'btn btn--line')}${btn('@/business/products.html', '적용 제품 보기', 'btn btn--line')}</div>
@@ -81,7 +81,7 @@ export default function (db) {
   <ol class="timeline">${company.history.map((y) => `
     <li>
       <h3 class="year">${esc(y.year)}</h3>
-      <ul>${y.items.map((i) => `<li><span class="tag tag--${esc(i.tag)}">${esc(i.tag)}</span>${esc(i.text)}</li>`).join('')}</ul>
+      <ul>${y.items.map((i) => `<li>${i.month ? `<span class="mon">${esc(i.month)}월</span>` : ''}<span class="tag tag--${esc(i.tag)}">${esc(i.tag)}</span>${esc(i.text)}</li>`).join('')}</ul>
     </li>`).join('')}
   </ol>
 </section>
@@ -127,9 +127,17 @@ export default function (db) {
 </section>
 
 <section>
-  <h2 class="secTit">주요 수상</h2>
+  <h2 class="secTit">수상 실적</h2>
   <dl class="cvList cvList--wide">${ceo.awards.map((c) => `<div><dt>${esc(c.year)}</dt><dd>${esc(c.text)}</dd></div>`).join('')}</dl>
 </section>
+${company.coCeo ? `
+<section>
+  <h2 class="secTit">${esc(company.coCeo.title)}</h2>
+  <dl class="infoTable">
+    <div><dt>성명</dt><dd><strong>${esc(company.coCeo.name)}</strong> <span class="sub">${esc(company.coCeo.since)}</span></dd></div>
+    <div><dt>학력</dt><dd>${company.coCeo.education.map(esc).join('<br>')}</dd></div>
+  </dl>
+</section>` : ''}
 
 <section class="cta">
   <div><h2>${esc(storyLabel)}</h2><p>${esc(story.lead)}</p></div>

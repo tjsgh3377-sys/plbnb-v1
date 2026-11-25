@@ -183,8 +183,11 @@ button { cursor: pointer; background: none; border: 0; }
 .matMarquee { overflow: hidden; }
 .matMarquee .swiper-wrapper { display: flex; gap: 24px; width: max-content; }
 .matCard { flex-shrink: 0; width: 360px; border: 1px solid var(--gray-200); border-radius: var(--card-radius); background: #fff; padding: 30px; }
+.matCard .logoBox { height: 96px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px; border-radius: 10px; background: #fff; border: 1px solid var(--gray-200); }
+.matCard .logoBox img { max-height: 100%; max-width: 78%; width: auto; object-fit: contain; }
+.matCard .logoBox span { font-size: 22px; font-weight: 800; color: var(--brand-navy); }
 .matCard .en { font-size: 15px; font-weight: 700; color: var(--mfg); }
-.matCard h3 { font-size: 26px; font-weight: 800; margin: 4px 0 12px; letter-spacing: -0.01em; }
+.matCard h3 { font-size: 24px; font-weight: 800; margin: 4px 0 0; letter-spacing: -0.01em; }
 .matCard p { font-size: 16.5px; line-height: 1.65; color: var(--gray-600); min-height: 82px; }
 .matCard .brand { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--gray-200); display: flex; gap: 14px; font-size: 16px; }
 .matCard .brand dt { flex: none; color: var(--gray-500); }

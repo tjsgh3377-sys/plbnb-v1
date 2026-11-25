@@ -1,35 +1,227 @@
 {
-  "_안내": "협력사와 협력 사례. 기업명(company)과 제품 브랜드(brands)를 구분해 적습니다. logo 는 사용 허가를 받은 로고만 넣으세요(비어 있으면 기업명 텍스트로 표시). 출처: 「2026 07 회사 제품 소개」 적용제품 항목, 기존 홈페이지 연혁, 언론 보도.",
+  "_안내": "협력사와 협력 사례. 기업명(company)과 제품 브랜드(brands)를 구분해 적습니다. 로고·홈페이지 주소와 협력사 구성은 고객사 현재 홈페이지(plbnb.com) '협력사'·'사업화 현황' 게시 내용을 따랐습니다. summary 가 비어 있으면 협력 내용 칸을 비워 둡니다.",
   "partners": [
-    { "id": "namyang", "company": "남양유업", "field": "유제품", "brands": ["불가리스", "불가리스 핏"], "summary": "발효유 제품에 PLBNB 균주가 적용되었습니다.", "logo": "", "url": "", "products": ["bulgaris", "bulgaris-fit"] },
-    { "id": "ckdhc", "company": "종근당건강", "field": "건강기능식품", "brands": ["락토핏"], "summary": "프로바이오틱스 제품에 PLBNB 균주가 적용되었습니다.", "logo": "", "url": "", "products": ["lactofit"] },
-    { "id": "boryung", "company": "보령", "field": "건강기능식품", "brands": ["장수 유산균"], "summary": "장수마을 유래 균주를 원료로 한 제품이 출시되었습니다.", "logo": "", "url": "", "products": ["boryung-jangsu"] },
-    { "id": "coreana", "company": "코리아나화장품", "field": "화장품", "brands": ["유산균 화장품"], "summary": "유산균 배양액을 화장품에 적용하는 공동 연구를 진행했습니다.", "logo": "", "url": "", "products": ["coreana-cosmetics"] },
-    { "id": "novarex", "company": "노바렉스", "field": "건강기능식품", "brands": [], "summary": "PLBNB 균주 적용 기업으로 소개되어 있습니다.", "logo": "", "url": "" },
-    { "id": "kolmar", "company": "콜마", "field": "건강기능식품", "brands": [], "summary": "PLBNB 균주 적용 기업으로 소개되어 있습니다.", "logo": "", "url": "" },
-    { "id": "nutri", "company": "뉴트리", "field": "건강기능식품", "brands": [], "summary": "PLBNB 균주 적용 기업으로 소개되어 있습니다.", "logo": "", "url": "" },
-    { "id": "cjwellcare", "company": "CJ웰케어", "field": "건강기능식품", "brands": [], "summary": "PLBNB 균주 적용 기업으로 소개되어 있습니다.", "logo": "", "url": "" },
-    { "id": "mtherapharma", "company": "엠테라파마", "field": "신약 공동 개발", "brands": [], "summary": "2025년 신약 공동 개발 업무협약(MOU)을 체결했습니다.", "logo": "", "url": "" }
+    {
+      "id": "namyang",
+      "company": "남양유업",
+      "field": "유제품",
+      "brands": [
+        "불가리스",
+        "불가리스 핏",
+        "위력 · 위쎈"
+      ],
+      "summary": "발효유 제품에 PLBNB 균주(PL9988, PL60, PL9001)가 적용되었습니다.",
+      "logo": "images/partners/namyang.png",
+      "url": "https://company.namyangi.com/ko/main",
+      "products": [
+        "bulgaris",
+        "bulgaris-fit",
+        "wiryeok-wissen"
+      ]
+    },
+    {
+      "id": "cjwellcare",
+      "company": "CJ웰케어",
+      "field": "건강기능식품",
+      "brands": [
+        "바이오코어"
+      ],
+      "summary": "프로바이오틱스 제품에 PLBNB 균주(BI9988)가 적용되었습니다.",
+      "logo": "images/partners/cjwellcare.png",
+      "url": "https://cjwellcare.com/",
+      "products": [
+        "byocore"
+      ]
+    },
+    {
+      "id": "ckdhc",
+      "company": "종근당건강",
+      "field": "건강기능식품",
+      "brands": [
+        "락토핏"
+      ],
+      "summary": "프로바이오틱스 제품에 PLBNB 균주(PL9988)가 적용되었습니다.",
+      "logo": "",
+      "url": "",
+      "products": [
+        "lactofit"
+      ]
+    },
+    {
+      "id": "boryung",
+      "company": "보령제약",
+      "field": "건강기능식품",
+      "brands": [],
+      "summary": "PLBNB 균주(PL9988, BI9988) 적용 기업으로 소개되어 있습니다.",
+      "logo": "images/partners/boryung.png",
+      "url": ""
+    },
+    {
+      "id": "nutri",
+      "company": "뉴트리",
+      "field": "건강기능식품",
+      "brands": [],
+      "summary": "PLBNB 균주(BI9988) 적용 기업으로 소개되어 있습니다.",
+      "logo": "images/partners/nutri.png",
+      "url": ""
+    },
+    {
+      "id": "novarex",
+      "company": "노바렉스",
+      "field": "건강기능식품",
+      "brands": [],
+      "summary": "PLBNB 균주(PL9988) 적용 기업으로 소개되어 있습니다.",
+      "logo": "",
+      "url": ""
+    },
+    {
+      "id": "kolmar",
+      "company": "콜마",
+      "field": "건강기능식품",
+      "brands": [],
+      "summary": "PLBNB 균주(PL9988) 적용 기업으로 소개되어 있습니다.",
+      "logo": "",
+      "url": ""
+    },
+    {
+      "id": "priority-healthfood",
+      "company": "Priority Healthfood Corporation",
+      "field": "해외 수출 (대만)",
+      "brands": [],
+      "summary": "PLBNB 균주(PL62)를 대만으로 수출했습니다.",
+      "logo": "images/partners/priority-healthfood.png",
+      "url": ""
+    },
+    {
+      "id": "mtherapharma",
+      "company": "엠테라파마",
+      "field": "신약 공동 개발",
+      "brands": [],
+      "summary": "2025년 2월 신약 공동 개발 업무협약(MOU)을 체결했습니다.",
+      "logo": "images/partners/mtherapharma.png",
+      "url": "http://mtherapharma.com/eng/index.php"
+    },
+    {
+      "id": "cellbiotech",
+      "company": "쎌바이오텍",
+      "field": "협력사",
+      "brands": [],
+      "summary": "",
+      "logo": "images/partners/cellbiotech.png",
+      "url": "https://www.cellbiotech.com/"
+    },
+    {
+      "id": "mediogen",
+      "company": "메디오젠",
+      "field": "협력사",
+      "brands": [],
+      "summary": "",
+      "logo": "images/partners/mediogen.png",
+      "url": "http://mediogen.co.kr/"
+    },
+    {
+      "id": "vitech",
+      "company": "바이텍",
+      "field": "협력사",
+      "brands": [],
+      "summary": "",
+      "logo": "images/partners/vitech.png",
+      "url": "http://www.vitaltech.co.kr/"
+    },
+    {
+      "id": "plbio",
+      "company": "피엘바이오",
+      "field": "협력사",
+      "brands": [],
+      "summary": "",
+      "logo": "images/partners/plbio.png",
+      "url": "http://plbio.com/main/"
+    },
+    {
+      "id": "coreana",
+      "company": "코리아나화장품",
+      "field": "화장품",
+      "brands": [
+        "유산균 화장품"
+      ],
+      "summary": "유산균 배양액을 화장품에 적용하는 공동 연구를 진행했습니다.",
+      "logo": "",
+      "url": "",
+      "products": [
+        "coreana-cosmetics"
+      ]
+    }
   ],
   "cases": [
     {
-      "id": "longevity-strain", "partner": "보령수앤수", "title": "장수마을 유래 유산균의 제품 적용", "year": "2013–2015",
+      "id": "longevity-strain",
+      "partner": "보령수앤수",
+      "title": "장수마을 유래 유산균의 제품 적용",
+      "year": "2013–2015",
       "background": "국내 장수마을 8곳의 건강한 고령자를 대상으로 장내 유산균을 조사해 우수 균주를 찾는 연구가 진행되었습니다.",
       "content": "분리한 유산균 가운데 병원균 억제, 항생제 감수성, 장 부착 특성 등을 기준으로 PL9988을 선발했고, 이 균주를 원료로 한 제품이 출시되었습니다.",
       "result": "2015년 12월 장수 유산균 제품 출시가 보도되었습니다.",
-      "related": { "strains": ["pl9988"], "products": ["boryung-jangsu"], "patents": ["10-1452234"], "media": ["yna-20151216", "donga-20140912"] }
+      "related": {
+        "strains": [
+          "pl9988"
+        ],
+        "products": [
+          "boryung-jangsu"
+        ],
+        "patents": [
+          "10-1488770"
+        ],
+        "media": [
+          "yna-20151216",
+          "donga-20140912"
+        ]
+      }
     },
     {
-      "id": "cosmetics-lab", "partner": "코리아나화장품", "title": "유산균 화장품 공동 개발", "year": "2008",
+      "id": "cosmetics-lab",
+      "partner": "코리아나화장품",
+      "title": "유산균 화장품 공동 개발",
+      "year": "2008",
       "background": "유산균과 그 배양액을 식품이 아닌 화장품 소재로 활용할 수 있는지 살펴보는 공동 연구가 진행되었습니다.",
       "content": "이연희 교수와 코리아나화장품 송파기술연구소가 유산균 화장품을 공동 개발했습니다.",
       "result": "2008년 3월 제품 출시가 보도되었고, 같은 해 5월 KBS 《과학카페》에서 관련 실험이 소개되었습니다.",
-      "related": { "strains": ["pl60"], "products": ["coreana-cosmetics"], "media": ["fnnews-20080324", "kbs-20080517"] }
+      "related": {
+        "strains": [
+          "pl60"
+        ],
+        "products": [
+          "coreana-cosmetics"
+        ],
+        "media": [
+          "fnnews-20080324",
+          "kbs-20080517"
+        ]
+      }
     },
     {
-      "id": "mou-mthera", "partner": "엠테라파마", "title": "신약 공동 개발 업무협약", "year": "2025",
+      "id": "export-taiwan",
+      "partner": "Priority Healthfood Corporation (대만)",
+      "title": "균주 해외 수출",
+      "year": "",
+      "background": "국내에서 연구한 기능성 균주를 해외 시장에 공급한 사례입니다.",
+      "content": "CLA 생성 균주 PL62를 대만 Priority Healthfood Corporation에 수출했습니다.",
+      "result": "PLBNB 균주의 해외 공급 사례입니다.",
+      "related": {
+        "strains": [
+          "pl62"
+        ],
+        "patents": [
+          "10-0686558"
+        ]
+      }
+    },
+    {
+      "id": "mou-mthera",
+      "partner": "엠테라파마",
+      "title": "신약 공동 개발 업무협약",
+      "year": "2025",
       "background": "유산균 연구 성과를 신약 개발 영역으로 넓히기 위한 협력입니다.",
-      "content": "엠테라파마와 신약 공동 개발을 위한 업무협약(MOU)을 체결했습니다.",
+      "content": "2025년 2월 엠테라파마와 신약 공동 개발을 위한 업무협약(MOU)을 체결했습니다.",
       "result": "세부 협력 내용은 추후 공개됩니다."
     }
   ]

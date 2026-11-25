@@ -1,108 +1,187 @@
 {
   "_안내": "기타 연구 성과(논문·과제·인증·학술 활동). type 은 '연구 논문' | '연구 과제' | '인증' | '학술 활동'. 인용 횟수는 조회 시점에 따라 달라지므로 사이트에는 표시하지 않습니다. 출처: 대표논문 리스트(2026.11.10 조회), 회사 제품 소개, 기존 홈페이지 연혁.",
-  "types": ["연구 논문", "연구 과제", "인증", "학술 활동"],
+  "types": [
+    "연구 논문",
+    "연구 과제",
+    "인증",
+    "학술 활동"
+  ],
   "items": [
     {
-      "id": "paper-2026-pl186", "type": "연구 논문", "year": 2026,
+      "id": "paper-2026-pl186",
+      "type": "연구 논문",
+      "year": 2026,
       "title": "GABA-Producing Capabilities of Lactococcus lactis PL186 in Murine and Human",
       "source": "Journal of Microbiology and Biotechnology. 2026;36.",
       "summary": "락토코커스 락티스 PL186의 GABA 생성능을 생쥐와 사람에서 살펴본 연구입니다.",
-      "related": { "strains": ["pl186"] }
+      "related": {
+        "strains": [
+          "pl186"
+        ]
+      }
     },
     {
-      "id": "paper-2026-pl9014", "type": "연구 논문", "year": 2026,
+      "id": "paper-2026-pl9014",
+      "type": "연구 논문",
+      "year": 2026,
       "title": "Chive-Fortified Fermentation Enhances Gamma-Aminobutyric Acid Production by Levilactobacillus brevis PL9014",
       "source": "International Journal of Probiotics and Prebiotics. 2026;21:1–6.",
       "summary": "부추를 첨가한 발효에서 PL9014의 GABA 생산량이 증가하는 현상을 보고한 연구입니다.",
-      "related": { "strains": ["pl9014"], "patents": ["10-2025-0053288"] }
+      "related": {
+        "strains": [
+          "pl9014"
+        ],
+        "patents": [
+          "10-2025-0053288"
+        ]
+      }
     },
     {
-      "id": "paper-2022-pl9988", "type": "연구 논문", "year": 2022,
+      "id": "paper-2022-pl9988",
+      "type": "연구 논문",
+      "year": 2022,
       "title": "Binding to Intestinal Epithelial Cells and Anti-Inflammatory Activity of Lactobacillus fermentum PL9988",
       "source": "International Journal of Probiotics and Prebiotics. 2022;17(1):14–20.",
       "url": "https://doi.org/10.37290/IJPP2641-7197.17:14-20",
       "summary": "사람 장세포주(HT-29)와 생쥐 장세포에서 PL9988의 부착능을 확인하고, LPS로 자극한 세포와 생쥐 모델에서 염증 관련 사이토카인 변화를 관찰한 후속 연구입니다.",
-      "related": { "strains": ["pl9988"] }
+      "related": {
+        "strains": [
+          "pl9988"
+        ]
+      }
     },
     {
-      "id": "paper-2015-pl9988", "type": "연구 논문", "year": 2015,
+      "id": "paper-2015-pl9988",
+      "type": "연구 논문",
+      "year": 2015,
       "title": "Characterization of Lactobacillus fermentum PL9988 Isolated from Healthy Elderly Korean in a Longevity Village",
       "source": "Journal of Microbiology and Biotechnology. 2015;25(9):1510–1518.",
       "url": "https://doi.org/10.4014/jmb.1505.05015",
       "summary": "국내 장수마을 8곳의 건강한 고령자에게서 유산균 분리주를 확보하고, 병원균 억제·항생제 감수성·장 부착·내산성·내담즙성 등을 평가해 PL9988을 최종 선발한 연구입니다.",
-      "related": { "strains": ["pl9988"], "patents": ["10-1452234"] }
+      "related": {
+        "strains": [
+          "pl9988"
+        ],
+        "patents": [
+          "10-1488770"
+        ]
+      }
     },
     {
-      "id": "paper-2009-pl60", "type": "연구 논문", "year": 2009,
+      "id": "paper-2009-pl60",
+      "type": "연구 논문",
+      "year": 2009,
       "title": "Production of c9,t11- and t10,c12-conjugated linoleic acids in humans by Lactobacillus rhamnosus PL60",
       "source": "Journal of Microbiology and Biotechnology. 2009;19(12):1617–1619.",
       "url": "https://doi.org/10.4014/jmb.0907.07010",
       "summary": "PL60 섭취 후 사람의 분변에서 균이 검출되고 혈청의 CLA 농도가 증가한 현상을 보고한 연구입니다. 혈중 대사산물 변화와 실제 체중·체지방 감량 입증은 구분됩니다.",
-      "related": { "strains": ["pl60"] }
+      "related": {
+        "strains": [
+          "pl60"
+        ]
+      }
     },
     {
-      "id": "paper-2007-pl62", "type": "연구 논문", "year": 2007,
+      "id": "paper-2007-pl62",
+      "type": "연구 논문",
+      "year": 2007,
       "title": "Antiobesity effect of trans-10,cis-12-conjugated linoleic acid-producing Lactobacillus plantarum PL62 on diet-induced obese mice",
       "source": "Journal of Applied Microbiology. 2007;103(4):1140–1146.",
       "url": "https://doi.org/10.1111/j.1365-2672.2007.03336.x",
       "summary": "CLA를 생성하는 사람 유래 균주 PL62를 비만 생쥐에 투여했을 때 백색지방조직 무게, 체중, 혈당이 감소한 결과를 보고한 동물실험 연구입니다.",
-      "related": { "strains": ["pl62"] }
+      "related": {
+        "strains": [
+          "pl62"
+        ]
+      }
     },
     {
-      "id": "paper-2006-pl60", "type": "연구 논문", "year": 2006,
+      "id": "paper-2006-pl60",
+      "type": "연구 논문",
+      "year": 2006,
       "title": "Human originated bacteria, Lactobacillus rhamnosus PL60, produce conjugated linoleic acid and show anti-obesity effects in diet-induced obese mice",
       "source": "Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids. 2006;1761(7):736–744.",
       "url": "https://doi.org/10.1016/j.bbalip.2006.05.007",
       "summary": "CLA를 생성하는 사람 유래 균주 PL60을 식이 유도 비만 생쥐에 8주간 투여했을 때 에너지 섭취 감소 없이 체중과 백색지방 무게가 감소한 결과를 보고한 동물실험 연구입니다.",
-      "related": { "strains": ["pl60"] }
+      "related": {
+        "strains": [
+          "pl60"
+        ]
+      }
     },
     {
-      "id": "paper-2006-pl9001", "type": "연구 논문", "year": 2006,
+      "id": "paper-2006-pl9001",
+      "type": "연구 논문",
+      "year": 2006,
       "title": "Promotion of Bone Nodule Formation and Inhibition of Growth and Invasion of Streptococcus mutans by Weissella kimchii PL9001",
       "source": "Journal of Microbiology and Biotechnology. 2006;16(4):531–537.",
       "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART001008266",
       "summary": "생쥐 두개골 유래 골세포에서 PL9001 처리로 골결절 형성과 칼슘 축적이 증가하고, 충치균(S. mutans)의 골세포 침입이 억제된 결과를 보고한 세포 연구입니다.",
-      "related": { "strains": ["pl9001"] }
+      "related": {
+        "strains": [
+          "pl9001"
+        ]
+      }
     },
     {
-      "id": "paper-2005-pl9023", "type": "연구 논문", "year": 2005,
+      "id": "paper-2005-pl9023",
+      "type": "연구 논문",
+      "year": 2005,
       "title": "Characterization of Weissella kimchii PL9023 as a potential probiotic for women",
       "source": "FEMS Microbiology Letters. 2005;250(1):157–162.",
       "url": "https://doi.org/10.1016/j.femsle.2005.07.009",
       "summary": "100개가 넘는 유산균 가운데 과산화수소 생성능이 높은 PL9023을 선발하고, 질 유래 유해균의 성장과 부착 억제를 평가한 연구입니다.",
-      "related": { "strains": ["pl9023"] }
+      "related": {
+        "strains": [
+          "pl9023"
+        ]
+      }
     },
     {
-      "id": "paper-2002-pl9001", "type": "연구 논문", "year": 2002,
+      "id": "paper-2002-pl9001",
+      "type": "연구 논문",
+      "year": 2002,
       "title": "Effect of Weissella confusa Strain PL9001 on the Adherence and Growth of Helicobacter pylori",
       "source": "Applied and Environmental Microbiology. 2002;68(9):4642–4645.",
       "url": "https://doi.org/10.1128/AEM.68.9.4642-4645.2002",
       "summary": "사람 위세포주(MKN-45)에서 PL9001의 생균과 사균이 헬리코박터 파일로리의 부착을 억제하고, 배양 상등액이 헬리코박터의 생존율을 낮춘 결과를 보고한 연구입니다.",
-      "related": { "strains": ["pl9001"] }
+      "related": {
+        "strains": [
+          "pl9001"
+        ]
+      }
     },
     {
-      "id": "project-2024-mafra", "type": "연구 과제", "year": 2024,
+      "id": "project-2024-mafra",
+      "type": "연구 과제",
+      "year": 2024,
       "title": "농림축산식품부 고부가가치식품기술개발사업 수주",
       "source": "농림축산식품부",
-      "summary": "2024년 농림축산식품부 고부가가치식품기술개발사업 과제를 수주했습니다."
+      "summary": "2024년 4월 농림축산식품부 고부가가치식품기술개발사업 과제를 수주했습니다."
     },
     {
-      "id": "cert-2025-innobiz", "type": "인증", "year": 2025,
+      "id": "cert-2025-innobiz",
+      "type": "인증",
+      "year": 2025,
       "title": "기술혁신형 중소기업(Inno-Biz) 인증",
       "source": "",
-      "summary": "2025년 기술혁신형 중소기업(Inno-Biz) 인증을 받았습니다."
+      "summary": "2025년 4월 기술혁신형 중소기업(Inno-Biz) 인증을 받았습니다."
     },
     {
-      "id": "cert-2025-venture", "type": "인증", "year": 2025,
+      "id": "cert-2025-venture",
+      "type": "인증",
+      "year": 2025,
       "title": "벤처기업 확인 (연구개발유형)",
       "source": "",
-      "summary": "2023년 벤처기업 인증(연구개발형)에 이어 2025년 연구개발유형 벤처기업으로 확인받았습니다."
+      "summary": "2022년 5월 벤처기업 인증(연구개발형)에 이어 2025년 5월 연구개발유형 벤처기업으로 확인받았습니다."
     },
     {
-      "id": "cert-2023-lab", "type": "인증", "year": 2023,
+      "id": "cert-2021-lab",
+      "type": "인증",
+      "year": 2021,
       "title": "기업부설 마이크로바이옴 연구소 설립",
       "source": "",
-      "summary": "2023년 기업부설 마이크로바이옴 연구소를 설립했습니다."
+      "summary": "2021년 1월 기업부설 마이크로바이옴 연구소를 설립했습니다."
     }
   ]
 }

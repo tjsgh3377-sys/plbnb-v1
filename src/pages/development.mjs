@@ -156,6 +156,7 @@ ${inquiryCta('특허 기술의 활용을 검토하고 계신가요?', '기술이
     <div><dt>${isReg ? '특허번호' : '출원번호'}</dt><dd>제 ${esc(p.number)} 호</dd></div>
     <div><dt>${isReg ? '등록일' : '출원일'}</dt><dd><time datetime="${p.date}">${fmtDate(p.date)}</time></dd></div>
     ${p.appNumber ? `<div><dt>출원번호</dt><dd>제 ${esc(p.appNumber)} 호 (${fmtDate(p.appDate)} 출원)</dd></div>` : ''}
+    ${p.holder ? `<div><dt>특허권자</dt><dd>${esc(p.holder)} <span class="sub">(특허증 기재)</span></dd></div>` : ''}
     <div><dt>관련 균주</dt><dd>${(r.strains || []).length ? r.strains.map((s) => `<a class="chip" href="@/business/strains/${s.id}.html">${esc(s.name)}</a>`).join('') : esc(p.strainText || '—')}</dd></div>
   </dl>
 </section>
@@ -181,7 +182,7 @@ ${backBtn('@/business/patents.html', '특허 현황')}`,
   pages.push({
     path: 'business/products.html', group: 'development', item: 'products', title: '적용 제품',
     desc: `PLBNB의 균주와 기술이 고객사 제품에 적용된 사례 ${db.products.length}건. 제품별 적용 균주와 관련 특허, 언론 보도를 확인할 수 있습니다.`,
-    lead: 'PLBNB의 균주와 기술이 고객사 제품에 적용된 사례입니다. 완제품의 개발·제조·판매는 각 고객사가 수행합니다.',
+    lead: 'PLBNB의 균주와 기술이 적용된 제품입니다. 고객사 제품은 완제품의 개발·제조·판매를 각 고객사가 수행합니다.',
     body: `
 <section>
   <ul class="productList">${db.products.map((p) => {
@@ -191,7 +192,7 @@ ${backBtn('@/business/patents.html', '특허 현황')}`,
       <div class="product__img">${p.image ? img(p.image, `${p.company} ${p.name}`) : slot(`${p.company} ${p.name}`)}</div>
       <div class="product__body">
         <p class="company">${esc(p.company)} <span>${esc(p.category)}</span></p>
-        <h2><a href="@/business/products/${p.id}.html">${esc(p.name)}</a></h2>
+        <h2><a href="@/business/products/${p.id}.html">${esc(p.name)}</a>${p.nameEn ? ` <small>${esc(p.nameEn)}</small>` : ''}</h2>
         <dl>
           <div><dt>적용 균주</dt><dd>${(r.strains || []).map((s) => `<a class="chip" href="@/business/strains/${s.id}.html">${esc(s.name)}</a>`).join('') || '—'}</dd></div>
           <div><dt>관련 연구·기술</dt><dd>${esc(p.techText)}</dd></div>
@@ -209,7 +210,7 @@ ${inquiryCta('제품에 적용할 균주를 찾고 계신가요?', '제품 유�
     pages.push({
       path: `business/products/${p.id}.html`, group: 'development', item: 'products', crumb: p.name, title: `${p.company} ${p.name} | 적용 제품`, h1: p.name,
       eyebrow: `${p.company} · ${p.category}`, lead: p.summary,
-      desc: `${p.company} ${p.name}에 적용된 PLBNB 균주와 기술. ${p.summary}`,
+      desc: `${p.company} ${p.name}에 적용된 PLBNB 균주와 기술. ${p.summary}`, ogImage: p.image || undefined,
       body: `
 <section class="split">
   <div class="split__media">${p.image ? img(p.image, `${p.company} ${p.name}`) : slot(`${p.company} ${p.name}`, 'imgSlot--lg')}</div>
@@ -217,7 +218,7 @@ ${inquiryCta('제품에 적용할 균주를 찾고 계신가요?', '제품 유�
     <h2 class="secTit">제품 정보</h2>
     <dl class="infoTable infoTable--stack">
       <div><dt>제품명</dt><dd>${esc(p.name)}</dd></div>
-      <div><dt>고객사</dt><dd>${esc(p.company)}</dd></div>
+      <div><dt>${p.own ? '제조·판매' : '고객사'}</dt><dd>${esc(p.company)}</dd></div>
       <div><dt>분류</dt><dd>${esc(p.category)}</dd></div>
       <div><dt>적용 균주</dt><dd>${(r.strains || []).map((s) => `<a class="chip" href="@/business/strains/${s.id}.html">${esc(s.name)} · ${esc(s.species)}</a>`).join('') || '—'}</dd></div>
       <div><dt>적용 기술</dt><dd>${esc(p.techText)}</dd></div>
@@ -225,7 +226,7 @@ ${inquiryCta('제품에 적용할 균주를 찾고 계신가요?', '제품 유�
     ${p.officialUrl ? `<div class="btnRow">${ext(p.officialUrl, '공식 제품 페이지')}</div>` : ''}
   </div>
 </section>
-<p class="note">이 제품은 ${esc(p.company)}의 제품입니다. ${esc(site.name)}는 균주와 관련 기술을 제공했으며, 완제품의 개발·제조·판매는 ${esc(p.company)}가 수행합니다.</p>
+${p.own ? '' : `<p class="note">이 제품은 ${esc(p.company)}의 제품입니다. ${esc(site.name)}는 균주와 관련 기술을 제공했으며, 완제품의 개발·제조·판매는 ${esc(p.company)}가 수행합니다.</p>`}
 ${relatedBlock(r, ['strains', 'patents', 'media', 'achievements', 'cases', 'columns'])}
 ${backBtn('@/business/products.html', '적용 제품')}`,
     });

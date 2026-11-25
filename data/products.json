@@ -1,40 +1,137 @@
 {
-  "_안내": "적용 제품: PLBNB의 균주·기술이 고객사 제품에 적용된 사례입니다. PLBNB가 완제품을 직접 개발·제조한 것처럼 쓰지 않습니다. image 는 고객사의 사용 허가를 받은 이미지만 넣으세요(비어 있으면 '이미지 준비 중'으로 표시). 출처: 「2026 07 회사 제품 소개」 적용제품 항목, 언론 보도.",
+  "_안내": "적용 제품: PLBNB의 균주·기술이 적용된 제품입니다. 고객사 제품은 PLBNB가 완제품을 직접 개발·제조한 것처럼 쓰지 않습니다. 제품·균주 연결과 이미지는 고객사 현재 홈페이지(plbnb.com) '사업화 현황' 게시 내용을 따랐습니다.",
   "items": [
     {
-      "id": "bulgaris", "name": "불가리스", "company": "남양유업", "category": "발효유",
+      "id": "lactoforyou",
+      "name": "락토포유",
+      "nameEn": "LactoForYou",
+      "company": "피엘비앤비",
+      "category": "자체 개발 제품",
+      "own": true,
+      "summary": "PLBNB가 처음으로 출시한 자체 개발 제품입니다. PL9014, PL186, PL1403 세 균주가 적용되었습니다.",
+      "techText": "균주 개발 및 자체 제품화",
+      "image": "images/products/lactoforyou.jpg",
+      "officialUrl": "",
+      "related": {
+        "strains": [
+          "pl9014",
+          "pl186",
+          "pl1403"
+        ]
+      }
+    },
+    {
+      "id": "bulgaris",
+      "name": "불가리스",
+      "company": "남양유업",
+      "category": "발효유",
       "summary": "남양유업의 발효유 브랜드입니다. PLBNB의 장수마을 유래 균주 PL9988이 적용된 제품으로 소개되어 있습니다.",
       "techText": "장수마을 유래 균주 선발 및 균주 공급",
-      "image": "", "officialUrl": "",
-      "related": { "strains": ["pl9988"] }
+      "image": "images/products/bulgaris.jpg",
+      "officialUrl": "",
+      "related": {
+        "strains": [
+          "pl9988"
+        ]
+      }
     },
     {
-      "id": "bulgaris-fit", "name": "불가리스 핏", "company": "남양유업", "category": "발효유",
+      "id": "bulgaris-fit",
+      "name": "불가리스 핏",
+      "company": "남양유업",
+      "category": "발효유",
       "summary": "남양유업의 발효유 제품입니다. PLBNB의 CLA 생성 균주 PL60이 적용된 제품으로 소개되어 있습니다.",
       "techText": "CLA 생성 균주 연구 및 균주 공급",
-      "image": "", "officialUrl": "",
-      "related": { "strains": ["pl60"] }
+      "image": "images/products/bulgaris-fit.jpg",
+      "officialUrl": "",
+      "related": {
+        "strains": [
+          "pl60"
+        ]
+      }
     },
     {
-      "id": "lactofit", "name": "락토핏", "company": "종근당건강", "category": "건강기능식품",
+      "id": "lactofit",
+      "name": "락토핏",
+      "company": "종근당건강",
+      "category": "건강기능식품",
       "summary": "종근당건강의 프로바이오틱스 브랜드입니다. PLBNB의 장수마을 유래 균주 PL9988이 적용된 제품으로 소개되어 있습니다.",
       "techText": "장수마을 유래 균주 선발 및 균주 공급",
-      "image": "", "officialUrl": "",
-      "related": { "strains": ["pl9988"] }
+      "image": "images/products/lactofit.jpg",
+      "officialUrl": "",
+      "related": {
+        "strains": [
+          "pl9988"
+        ]
+      }
     },
     {
-      "id": "boryung-jangsu", "name": "장수 유산균", "company": "보령수앤수", "category": "건강기능식품",
+      "id": "wiryeok-wissen",
+      "name": "위력 · 위쎈",
+      "company": "남양유업",
+      "category": "발효유",
+      "summary": "남양유업의 발효유 제품입니다. PLBNB의 균주 PL9001이 적용된 제품으로 소개되어 있습니다.",
+      "techText": "헬리코박터 부착 억제 균주 연구 및 균주 공급",
+      "image": "images/products/wiryeok-wissen.jpg",
+      "officialUrl": "",
+      "related": {
+        "strains": [
+          "pl9001"
+        ]
+      }
+    },
+    {
+      "id": "byocore",
+      "name": "바이오코어 1000억 유산균",
+      "nameEn": "BYO CORE",
+      "company": "CJ웰케어",
+      "category": "건강기능식품",
+      "summary": "CJ웰케어의 프로바이오틱스 제품입니다. PLBNB의 장수마을 유래 균주 BI9988이 적용된 제품으로 소개되어 있습니다.",
+      "techText": "장수마을 유래 비피도박테리움 균주 선발 및 균주 공급",
+      "image": "images/products/byocore.jpg",
+      "officialUrl": "",
+      "related": {
+        "strains": [
+          "bi9988"
+        ]
+      }
+    },
+    {
+      "id": "boryung-jangsu",
+      "name": "장수 유산균",
+      "company": "보령수앤수",
+      "category": "건강기능식품",
       "summary": "장수마을 고령자의 장에서 분리한 유산균을 원료로 2015년 출시된 제품입니다. 이연희 교수 연구팀의 장수마을 유산균 연구가 출시 보도에 함께 소개되었습니다.",
       "techText": "장수마을 유래 균주 선발 및 균주 공급",
-      "image": "", "officialUrl": "",
-      "related": { "strains": ["pl9988"], "media": ["yna-20151216"] }
+      "image": "",
+      "officialUrl": "",
+      "related": {
+        "strains": [
+          "pl9988"
+        ],
+        "media": [
+          "yna-20151216"
+        ]
+      }
     },
     {
-      "id": "coreana-cosmetics", "name": "유산균 화장품", "company": "코리아나화장품", "category": "화장품",
+      "id": "coreana-cosmetics",
+      "name": "유산균 화장품",
+      "company": "코리아나화장품",
+      "category": "화장품",
       "summary": "이연희 교수와 코리아나화장품 송파기술연구소가 공동 개발한 유산균 화장품으로, 2008년 출시가 보도되었습니다.",
       "techText": "유산균 배양액의 화장료 적용 공동 연구",
-      "image": "", "officialUrl": "",
-      "related": { "strains": ["pl60"], "media": ["fnnews-20080324", "kbs-20080517"] }
+      "image": "",
+      "officialUrl": "",
+      "related": {
+        "strains": [
+          "pl60"
+        ],
+        "media": [
+          "fnnews-20080324",
+          "kbs-20080517"
+        ]
+      }
     }
   ]
 }
